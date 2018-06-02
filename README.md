@@ -5,7 +5,7 @@
 </p>
 
 ## Objetivo
-#
+
 La **FASE 1** tiene como objetivo principal ser el primer acercamiento del semillero **LinudecX** al sistema operativo **GNU/Linux** y a la programacion en **lenguaje C** desde este sistema operativo, donde se daran las bases teoricas y practicas para poder usar y administrar y programar el sistema operativo **GNU/Linux**. Este repositorio contendra la documentacion, los ejercicios y los laboratorios practicos *(o en su defecto forma de realizar la configuracion de los entornos)*, dando una guia para los miembros del semillero o personas externas.
 
 ## Enfoque
