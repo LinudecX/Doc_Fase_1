@@ -1,6 +1,6 @@
 # Primer Acercamiento
 
-Realizaremos un primer acercamiento a toda la onda del software libre y de su alrededor en diferentes aspectos como la filosofia y las libertidades, hablaremos un poco de su historia sobre como empezo y como evoluciono gracias al apoyo de diferentes desarroladores alrededor del mundo. Algunos argumentos de por que usar Gnu/Linux el dia a dia y a nivel tecnico en la vida informatica. Compararemos las diferentes licencias que existen y en cuales se mueve linux y algunos componentes de este y terminaremos explicando el paso a paso de como instalar xubuntu para poder trabajar algunas cosas mas adelante mientras se profundiza un poco mas el asunto.
+<center>Realizaremos un primer acercamiento a toda la onda del software libre y de su alrededor en diferentes aspectos como la filosofia y las libertidades, hablaremos un poco de su historia sobre como empezo y como evoluciono gracias al apoyo de diferentes desarroladores alrededor del mundo. Algunos argumentos de por que usar Gnu/Linux el dia a dia y a nivel tecnico en la vida informatica. Compararemos las diferentes licencias que existen y en cuales se mueve linux y algunos componentes de este y terminaremos explicando el paso a paso de como instalar xubuntu para poder trabajar algunas cosas mas adelante mientras se profundiza un poco mas el asunto.</center>
 
 ## Filosofia del software libre y Breve Historia
 
@@ -52,11 +52,11 @@ En lo largo del tiempo, el desarrollo del kernel tuvo una colaboracion muy grand
 
 De las distribuciones libres podemos consultar en [gnu.org/distros/free-distros.html](https://www.gnu.org/distros/free-distros.html) (donde podremos encontrar distribuciones completamente libres, sin codigo privativos en ellas, como por ejemplo trisquel o ProteanOS para sistemas embebidos) y no libres que podremos encontrar todo una gama de colores a nivel de sistema operativo en [Distro Watch](https://distrowatch.com/?language=ES) (tanto para sistemas desktop o servidores o sistemas embebidos).
 
-Beneficios y Contras de usar software totalmente libre
+**Beneficios y Contras de usar software totalmente libre**
 
 > ¿Como se aprende a escribir bien el codigo? Con leer mucho codigo y escribir mucho codigo!!!
 
-1. Beneficios
+1. **Beneficios**
     * Al tener acceso al codigo fuente de las aplicaciones y del sistema operativo, lleva al entendimiento y al habito de lectura de codigo fuente, y esto a largo plazo lleva a que seamos mejores desarrolladores y tengamos una mejor compresion de la maquina
     * Seguridad
     * Robustex
@@ -70,7 +70,7 @@ Beneficios y Contras de usar software totalmente libre
     * GoodBye agencias de espionaje y crackers, Teniendo unas buenas contramedidas en el sistema operativo no sera tan facil de penetrar y/o ser backdoorizado por personas externas
     * Gran apoyo tecnico por parte de la comunidad del software libre
 
-2. Contra
+2. **Contra**
     * Al rozar un poco la tendencia radical de solo usar software libre estariamos (o no) limitando el uso de nuestra maquina al no usar software privativo 
     * Todas las desventajas son superables teniendo en cuenta que esta en juego nuestra libertad
 
@@ -79,9 +79,9 @@ Beneficios y Contras de usar software totalmente libre
     <img src="imagenes/openhardware.png" width="200">
 </p>
 
-**Open Harware :** Existe un movimiento similar para el hardware (por ejemplo arduino es uno de estos proyectos de hardware libre) el cual el autor del hardware libra los esquimaticos y el firmware del hardware para el uso del publico bajo diferentes mecanismos de *copyleft* [MAS INFORMACION.](https://www.ecured.cu/Hardware_libre).
+**Open Harware :** Existe un movimiento similar para el hardware (por ejemplo arduino es uno de estos proyectos de hardware libre) el cual el autor del hardware libra los esquimaticos y el firmware del hardware para el uso del publico bajo diferentes mecanismos de *copyleft* [MAS INFORMACION.](https://www.ecured.cu/Hardware_libre)
 
-* ***Opinion personal :***
+***Opinion personal (@s0d0m4) :***
 
 <p align="center" >
     <img src="imagenes/reversing.jpg" width="400"> 
