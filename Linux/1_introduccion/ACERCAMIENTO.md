@@ -54,8 +54,9 @@ De las distribuciones libres podemos consultar en [gnu.org/distros/free-distros.
 
 Beneficios y Contras de usar software totalmente libre
 
+> ¿Como se aprende a escribir bien el codigo? Con leer mucho codigo y escribir mucho codigo!!!
+
 1. Beneficios
-> ¿Como se aprende a escribir bien el codigo? Con leer mucho codigo y escribir mucho codigo
     * Al tener acceso al codigo fuente de las aplicaciones y del sistema operativo, lleva al entendimiento y al habito de lectura de codigo fuente, y esto a largo plazo lleva a que seamos mejores desarrolladores y tengamos una mejor compresion de la maquina
     * Seguridad
     * Robustex
@@ -74,16 +75,16 @@ Beneficios y Contras de usar software totalmente libre
     * Todas las desventajas son superables teniendo en cuenta que esta en juego nuestra libertad
 
 
-<p align="center">
-    <img src="imagenes/openhardware.png">
+<p align="center" >
+    <img src="imagenes/openhardware.png" width="200">
 </p>
 
 **Open Harware :** Existe un movimiento similar para el hardware (por ejemplo arduino es uno de estos proyectos de hardware libre) el cual el autor del hardware libra los esquimaticos y el firmware del hardware para el uso del publico bajo diferentes mecanismos de *copyleft* [MAS INFORMACION.](https://www.ecured.cu/Hardware_libre).
 
 * ***Opinion personal :***
 
-<p align="center">
-    <img src="imagenes/reversing.png> 
+<p align="center" >
+    <img src="imagenes/reversing.jpg width="400"> 
 </p>
 
 Aunque el software privativo sea perjudicial para nuestros derechos como usuarios, el software privativo siempre nos brinda un reto bien llamativo, la ingenieria inversa.

@@ -20,10 +20,10 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
 
 1. [Introduccion](README.md)
     * [Primer acercamiento](Linux/1_introduccion/ACERCAMIENTO.md)
-        * Filosofia del software libre
+        * Filosofia del software libre y breve historia
         * ¿Porque usar sistemas basados en Gnu con kernel Linux?
-        * Historia
         * Comparacion Licencias
+        * Instalacion de xubuntu(First Time dude? Bienvenido)
     * Sistema Operativo
     * GNU != Linux
     * Virtualizacion
