@@ -44,9 +44,8 @@ Este movimiento social tiene como finalidad despertar la libertad del usuario, q
     <img src="imagenes/mapa.png">
 </p>
 
-<p align="justify">
 > **Definicion temporal(Luego se profudizara en esto)**
-> **KERNEL =** Nucleo o Kernel es un software que constituye la parte fundamental del sistema operativo, y se define como la parte que se ejecuta en modo privilegiado tambien conocido como modo kernel. Es el principal respoable de facilitar a los programas acceso seguro al hardware de la computadora, es el encargado de gestionar recursos, tambien se encarga de decidir que programa podra usar un dispositivo de hardware y durante cuanto tiempo. Acceder al hardware es un trabajo realmente complejo y normalmente los kernel tienen una capa de abstraccion de hardware, la cual facilita esta tarea.</p>
+> **KERNEL =** Nucleo o Kernel es un software que constituye la parte fundamental del sistema operativo, y se define como la parte que se ejecuta en modo privilegiado tambien conocido como modo kernel. Es el principal respoable de facilitar a los programas acceso seguro al hardware de la computadora, es el encargado de gestionar recursos, tambien se encarga de decidir que programa podra usar un dispositivo de hardware y durante cuanto tiempo. Acceder al hardware es un trabajo realmente complejo y normalmente los kernel tienen una capa de abstraccion de hardware, la cual facilita esta tarea.
 
 <p align="justify">
 GNU es un conjunto de herramientas algunas desarrolladas por el proyecto GNU y otras (de igual manera libres) tomadas de otros proyectos. Empezaron por el desarrollo de modulos que cumplieran ciertas tareas, entre esos Richard Stallman programo el compilador GCC. Para el kernel estaban realizando el Hurd, que es el nombre del kernel inicial de GNU, pero para la fecha no funcionaba completamente para ser puesto en produccion, afortunamente en 1991 Linus Torvals programo un kernel complatible con UNIX y lo denomino Linux, primeramente era un kernel privativo pero en 1992 lo convirtio en software libre. La combinacion del sistema operativo Gnu y del Kernel da al nombre GNU/Linux (Gnu con linux).</p>
@@ -62,7 +61,6 @@ De las distribuciones libres podemos consultar en [gnu.org/distros/free-distros.
 
 > ¿Como se aprende a escribir bien el codigo? Con leer mucho codigo y escribir mucho codigo!!!
 
-<p align="justify">
 1. **Beneficios**
     * Al tener acceso al codigo fuente de las aplicaciones y del sistema operativo, lleva al entendimiento y al habito de lectura de codigo fuente, y esto a largo plazo lleva a que seamos mejores desarrolladores y tengamos una mejor compresion de la maquina
     * Seguridad
@@ -75,12 +73,11 @@ De las distribuciones libres podemos consultar en [gnu.org/distros/free-distros.
     * Independiencia tecnologica
     * Al usar y comprender el software libre es lleva un estado en el cual una comunidad de desarrolladores pongan una linea fuerte ante el software privativo creando vias alternativas para la evolucion de la tecnologia.
     * GoodBye agencias de espionaje y crackers, Teniendo unas buenas contramedidas en el sistema operativo no sera tan facil de penetrar y/o ser backdoorizado por personas externas
-    * Gran apoyo tecnico por parte de la comunidad del software libre</p
+    * Gran apoyo tecnico por parte de la comunidad del software libre
 
-<p align="justify">
 2. **Contra**
     * Al rozar un poco la tendencia radical de solo usar software libre estariamos (o no) limitando el uso de nuestra maquina al no usar software privativo 
-    * Todas las desventajas son superables teniendo en cuenta que esta en juego nuestra libertad</p>
+    * Todas las desventajas son superables teniendo en cuenta que esta en juego nuestra libertad
 
 
 <p align="center" >
