@@ -10,6 +10,7 @@ El software libre es una propuesta para los usuarios de la informatica que brind
 
 <p align="center">
     <img src="imagenes/richard-stallman.png" width="300">
+    <img src="imagenes/gnu.png" width="300">
 </p>
 
 > ¿Como se aprende a escribir bien el codigo? Con leer mucho codigo y escribir mucho codigo
