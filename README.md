@@ -40,18 +40,17 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
 11. Seguridad
 
 ## Temario de Lenguaje C
-
-1. Repaso
-  * Configurando ambiente de desarrollo
+1. Configurando ambiente de desarrollo
     * Codeblocks
     * Atom + Pluggins
     * Vim + Some Weird Stuff
-  * Tipos de datos
-  * Operadores
-  * Tipo de datos complejos
+2. Repaso
+3. Tipos de datos
+    * Operadores
+    * Tipo de datos complejos
     * Estructuras
     * Punteros
-  * Administracion de memoria
-  * Manejo de archivos y streams
-  * Organizando el codigo
-  * Directivas del preprocesado
+4. Administracion de memoria
+5. Manejo de archivos y streams
+6. Organizando el codigo
+7. Directivas del preprocesado
