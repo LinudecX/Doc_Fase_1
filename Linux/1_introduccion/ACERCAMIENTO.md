@@ -84,7 +84,7 @@ Beneficios y Contras de usar software totalmente libre
 * ***Opinion personal :***
 
 <p align="center" >
-    <img src="imagenes/reversing.jpg width="400"> 
+    <img src="imagenes/reversing.jpg" width="400"> 
 </p>
 
 Aunque el software privativo sea perjudicial para nuestros derechos como usuarios, el software privativo siempre nos brinda un reto bien llamativo, la ingenieria inversa.
