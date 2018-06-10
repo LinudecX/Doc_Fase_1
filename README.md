@@ -23,7 +23,7 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
         * Filosofia del software libre
         * ¿Porque usar sistemas basados en Gnu con kernel Linux?
         * Historia
-        * Reparacion Licencias
+        * Comparacion Licencias
     * Sistema Operativo
     * GNU != Linux
     * Virtualizacion

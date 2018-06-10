@@ -10,7 +10,7 @@ El software libre es una propuesta para los usuarios de la informatica que brind
 
 Este movimiento social tiene como finalidad despertar la libertad del usuario, que el usuario sea consciente de que tiene derechos inherentes al momento de usar un sistema operativo o un software, a pesar que de que las grandes compañias de software y de sistemas operativos los omitan y vulneren estos derechos de los usuarios. Se debe acotar que **Software Gratuito** != **Software Libre**, existe la gran confusion que el software libre es software gratuito, Un software gratuito es un software que es llamado FreeWare el cual puede ser de libre uso pero por no podria dar el codigo fuente. o la redestribucion de este. Para poder saber si un software podria considerarse software libre debe cumplir con las libertades del usuario, que se nombraran mas adelante. 
 
-¿Pero quien inicio esto?
+**¿Pero quien inicio esto?**
 
 La iniciativa empieza por Richard Stallman, fundador del movimiento por el software libre en el mundo. (Cabe decir que el creo GCC, GNU Emacs y el depurador GDB bajo el proyecto de GNU). En 1983 (despues de tener algunos lios tras la firma de un acuerdo de no divulgacion para que no liberara informacion y codigo sobre algunas de las implementaciondes privativas realizadas por parte del la compañia Symbolics) anuncio el inicio del proyecto GNU, que tiene como objetico crear un sistema operativo completamente libre, que fuera un alternativa completamente libre de usar UNIX y que fuera compatible con UNIX(GNU  significa GNU No es Unix).
 
@@ -32,7 +32,7 @@ Cabe destacar que el mecanismo de distribucion y proteccion de software o de alg
     <img src="imagenes/fsf.png">
 </p>
 
-Las 4 libertades que debe cumplir un software :
+**Las 4 libertades que debe cumplir un software :**
 
 * **Libertad 0 =** La libertad de ejecutar el programa como se desee, con cualquier proposito
 * **Libertad 1 =** La libertad de estudiarlo como funciona el programa, y cambiarlo para lo que usted quiera. (el acceso al codigo fuente es necesario para esto)
@@ -43,23 +43,54 @@ Las 4 libertades que debe cumplir un software :
     <img src="imagenes/mapa.png">
 </p>
 
+> **Definicion temporal(Luego se profudizara en esto)**
+> **KERNEL =** Nucleo o Kernel es un software que constituye la parte fundamental del sistema operativo, y se define como la parte que se ejecuta en modo privilegiado tambien conocido como modo kernel. Es el principal respoable de facilitar a los programas acceso seguro al hardware de la computadora, es el encargado de gestionar recursos, tambien se encarga de decidir que programa podra usar un dispositivo de hardware y durante cuanto tiempo. Acceder al hardware es un trabajo realmente complejo y normalmente los kernel tienen una capa de abstraccion de hardware, la cual facilita esta tarea.
 
-Inicio de kernel con BSD
+GNU es un conjunto de herramientas algunas desarrolladas por el proyecto GNU y otras (de igual manera libres) tomadas de otros proyectos. Empezaron por el desarrollo de modulos que cumplieran ciertas tareas, entre esos Richard Stallman programo el compilador GCC. Para el kernel estaban realizando el Hurd, que es el nombre del kernel inicial de GNU, pero para la fecha no funcionaba completamente para ser puesto en produccion, afortunamente en 1991 Linus Torvals programo un kernel complatible con UNIX y lo denomino Linux, primeramente era un kernel privativo pero en 1992 lo convirtio en software libre. La combinacion del sistema operativo Gnu y del Kernel da al nombre GNU/Linux (Gnu con linux).
 
-el kernel de Linux creado por Linus Torvals
+En lo largo del tiempo, el desarrollo del kernel tuvo una colaboracion muy grande a nivel mundial convirtiendose en uno de los kernels mas estables, No esta demas comentar que mientras mas grande se hacian las contribuciones por diferentes programadores (tanto modificando el sistema base GNU y al kernel linux) por medio de internet asi mismo se volvia una tarea compleja llevar un control de versiones, durante esa transicion Linus Torvals escribio el motor de control de versiones git (Usado hoy en dia como uno de los controles de versiones mas estables y de principal uso a la fecha). Gnu/Linux crecio mucho y empezaron a agruparse diferentes "colectivos" para realizar sus propias distribuciones de Gnu/linux, donde la instalacion y configuracion de este sistema fuera un poco mas amena. Durante este proceso varios de estos colectivos empezaron a recibir apoyo por ciertas empresa empezaron a recibir binarios (no codigo fuente, los binarios en raw) de ciertos fabricantes de componentes electronicos (Donde estos binarios eran firmware de algunos componentes del computador, siendo codigo privativo ya que solo hacian una implementacion del binario dentro del codigo mas liberan los drivers), con estos binarios el kernel linux empezaba a aumentar el soporte de ciertos componentes que antes no tenian soporte, pero rompiendo una de las libertades del software, convirtiendo el sistema GNU/Linux un sistema no tan libre como lo habia pensado richard stallman. 
 
-El kernel no es del todo libre
-
-Distribuciones libres y no libres
+De las distribuciones libres podemos consultar en [gnu.org/distros/free-distros.html](https://www.gnu.org/distros/free-distros.html) (donde podremos encontrar distribuciones completamente libres, sin codigo privativos en ellas, como por ejemplo trisquel o ProteanOS para sistemas embebidos) y no libres que podremos encontrar todo una gama de colores a nivel de sistema operativo en [Distro Watch](https://distrowatch.com/?language=ES) (tanto para sistemas desktop o servidores o sistemas embebidos).
 
 Beneficios y Contras de usar software totalmente libre
 
+1. Beneficios
 > ¿Como se aprende a escribir bien el codigo? Con leer mucho codigo y escribir mucho codigo
+    * Al tener acceso al codigo fuente de las aplicaciones y del sistema operativo, lleva al entendimiento y al habito de lectura de codigo fuente, y esto a largo plazo lleva a que seamos mejores desarrolladores y tengamos una mejor compresion de la maquina
+    * Seguridad
+    * Robustex
+    * Correcion de programas
+    * Expansion
+    * Consumo minimo de hardware
+    * Estabilidad
+    * Control de informacion
+    * Independiencia tecnologica
+    * Al usar y comprender el software libre es lleva un estado en el cual una comunidad de desarrolladores pongan una linea fuerte ante el software privativo creando vias alternativas para la evolucion de la tecnologia.
+    * GoodBye agencias de espionaje y crackers, Teniendo unas buenas contramedidas en el sistema operativo no sera tan facil de penetrar y/o ser backdoorizado por personas externas
+    * Gran apoyo tecnico por parte de la comunidad del software libre
 
-Open Harware
+2. Contra
+    * Al rozar un poco la tendencia radical de solo usar software libre estariamos (o no) limitando el uso de nuestra maquina al no usar software privativo 
+    * Todas las desventajas son superables teniendo en cuenta que esta en juego nuestra libertad
 
-Libertad de poder escoger
-    Software privativo no es tan malo
+
+<p align="center">
+    <img src="imagenes/openhardware.png">
+</p>
+
+**Open Harware :** Existe un movimiento similar para el hardware (por ejemplo arduino es uno de estos proyectos de hardware libre) el cual el autor del hardware libra los esquimaticos y el firmware del hardware para el uso del publico bajo diferentes mecanismos de *copyleft* [MAS INFORMACION.](https://www.ecured.cu/Hardware_libre).
+
+* ***Opinion personal :***
+
+<p align="center">
+    <img src="imagenes/reversing.png> 
+</p>
+
+Aunque el software privativo sea perjudicial para nuestros derechos como usuarios, el software privativo siempre nos brinda un reto bien llamativo, la ingenieria inversa.
+
+> La ingenieria inversa es el proceso llevado a cabo con el objetivo de obtener informacion, diseño o mecanismos de un producto, con el fin de determinar cuales son sus componentes y de que maneran interactuan entre si.
+
+Al realizar ingenieria inversa a productos privativos podriamos escribir versiones libres de controladores o firmware para ayudar a crecer el proyecto Gnu/Linux sin necesidad de instalar aplicaciones que probablemente vulnere la integridad de nuestra informacion, anonimato y libertades como usuarios. (En pocas palabras el software privativo es bueno para romperlo y analizarlo por un bien mayor).
 
 ## ¿Por que usar un sistema Gnu con kernel Linux?
 
@@ -72,8 +103,9 @@ Libertad de poder escoger
 1. [Filosofia del sofware libre - MisionSucre - Stephenson Prieto](https://es.slideshare.net/Stephenson/filosofa-del-software-libre)
 2. [Conferencia Richard Stallman - Software Libre (en español)](https://www.youtube.com/watch?v=f0slZnpELaU)
 3. [Hardware Libre](https://www.ecured.cu/Hardware_libre)
-4. [GNU org](https://www.gnu.org/gnu/gnu-history.html)
-5. [FSF](https://www.gnu.org/philosophy/free-sw.es.html)
-6. [FSF-ecured](https://www.ecured.cu/Free_Software_Foundation)
-
+4. [GNU org - Historia](https://www.gnu.org/gnu/gnu-history.html)
+5. [Proyecto GNU](https://www.gnu.org/gnu/thegnuproject.html)
+6. [FSF](https://www.gnu.org/philosophy/free-sw.es.html)
+7. [FSF-ecured](https://www.ecured.cu/Free_Software_Foundation)
+8. [Tech Talk: Linus Torvals on git](https://www.youtube.com/watch?v=4XpnKHJAok8)
 
