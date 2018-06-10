@@ -35,11 +35,10 @@ Este movimiento social tiene como finalidad despertar la libertad del usuario, q
 
 **Las 4 libertades que debe cumplir un software :**
 
-<p align="justify">
 * **Libertad 0 =** La libertad de ejecutar el programa como se desee, con cualquier proposito
 * **Libertad 1 =** La libertad de estudiarlo como funciona el programa, y cambiarlo para lo que usted quiera. (el acceso al codigo fuente es necesario para esto)
 * **Libertad 2 =** La libertad de redistribuir copias para ayudar a otros
-* **Libertad 3 =** La libertad de distribuir copias de sus versiones modificadas a terceros. Esto le permito ofrecer a toda la comunidad la oportunidad de beneficiarse de las modificaciones. El acceso al codigo fuente es una condicion necesaria para ello.</p>
+* **Libertad 3 =** La libertad de distribuir copias de sus versiones modificadas a terceros. Esto le permito ofrecer a toda la comunidad la oportunidad de beneficiarse de las modificaciones. El acceso al codigo fuente es una condicion necesaria para ello.
 
 <p align ="center">
     <img src="imagenes/mapa.png">
@@ -85,9 +84,9 @@ De las distribuciones libres podemos consultar en https://www.gnu.org/distros/fr
     <img src="imagenes/openhardware.png" width="200">
 </p>
 
-<p align="justify">
-**Open Harware :** Existe un movimiento similar para el hardware (por ejemplo arduino es uno de estos proyectos de hardware libre) el cual el autor del hardware libra los esquimaticos y el firmware del hardware para el uso del publico bajo diferentes mecanismos de *copyleft* MAS INFORMACION en https://www.ecured.cu/Hardware_libre.
-</p>
+
+**Open Harware :** <p align="justify">Existe un movimiento similar para el hardware (por ejemplo arduino es uno de estos proyectos de hardware libre) el cual el autor del hardware libra los esquimaticos y el firmware del hardware para el uso del publico bajo diferentes mecanismos de *copyleft* MAS INFORMACION en https://www.ecured.cu/Hardware_libre.</p>
+
 
 ***Opinion personal (@s0d0m4) :***
 
