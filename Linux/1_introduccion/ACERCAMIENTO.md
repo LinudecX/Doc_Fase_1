@@ -259,7 +259,7 @@ Como podemos ver en la imagen, si visualizamos nuestros archivos por un gestor d
 <img src="imagenes/cd.jpg">
 </p>
 
-<p alig="justify">
+<p align="justify">
 Otro comando es el comando cd, si yo quiero entrar a una de las carpetas que acabo de visualizar con el comando 'ls', solo debo colocar el comando 'cd nombreCaperta' y el nombre de la carpeta que yo quiero ingresar. Con estos dos comandos puedo navegar por mis directorios tanto de mi carpeta personal como otros archivos y carpetas del sistema. Pero que pasa si quiero devolverme a la carpeta anterior donde estaba ubicado, para eso son las carpetas ocultas de los puntos que antes hablabamos, al ejecutar el programa 'cd ..' y le pasamos como argumento al nombre de la carpeta '..', lo que nos estamos refiriendo es que vamos a ingresar a la carpeta atras de la carpeta donde estoy ubicado. cd tambien acepta como argumentos rutas largas de carpetas, por ejemplo si yo quisiera ingresar a mi carpeta personal 'cd /home/micarpeta', dentro de la carpeta 'home' van a estar todas las carpetas de los usuarios creados para el sistema (a excepcion de la carpeta del administrador root) entonces ahi estamos diciendo "voy a ir a la carpeta 'micarpeta' que esta ubicada dentro de la carpeta 'home'
 </p>
 
