@@ -185,23 +185,23 @@ Despues de realizar la carga del sistema, aparece dos opciones, si quieremos mon
 </p>
 
 <p align ="center">
-<img src="imagenes/install_8.png">
+<img src="imagenes/install_8.jpg">
 </p>
 
 <p align ="center">
-<img src="imagenes/install_9.png">
+<img src="imagenes/install_9.jpg">
 </p>
 
 <p align ="center">
-<img src="imagenes/install_10.png">
+<img src="imagenes/install_10.jpg">
 </p>
 
 <p align ="center">
-<img src="imagenes/install_11.png">
+<img src="imagenes/install_11.jpg">
 </p>
 
 <p align ="center">
-<img src="imagenes/install_12.png">
+<img src="imagenes/install_12.jpg">
 </p>
 
 ### Comandos basicos de uso de directorios
