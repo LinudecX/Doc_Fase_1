@@ -57,7 +57,7 @@ En lo largo del tiempo, el desarrollo del kernel tuvo una colaboracion muy grand
 De las distribuciones libres podemos consultar en https://www.gnu.org/distros/free-distros.html (donde podremos encontrar distribuciones completamente libres, sin codigo privativos en ellas, como por ejemplo trisquel o ProteanOS para sistemas embebidos) y no libres que podremos encontrar todo una gama de colores a nivel de sistema operativo en https://distrowatch.com/?language=ES (tanto para sistemas desktop o servidores o sistemas embebidos).</p>
 
 
-**Beneficios y Contras de usar software totalmente libre**
+**iBeneficios y Contras de usar software totalmente libre**
 
 > ¿Como se aprende a escribir bien el codigo? Con leer mucho codigo y escribir mucho codigo!!!
 
@@ -104,9 +104,29 @@ Aunque el software privativo sea perjudicial para nuestros derechos como usuario
 
 ## ¿Por que usar un sistema Gnu con kernel Linux?
 
+Punto de vista (@s0d0m4):
+
+El sistema operativo Gnu/linux es una gran herramienta tanto de aprendizaje como de utilizacion en la vida profesional. Se puede argumentar desde tres puntos de vista.
+
+1. **Estudiante de informatica**
+
+Como estudiante de informatica se puede aprender mucho del uso y de la programacion de un sistema Gnu/Linux, combinando el analisis del sistema operativo (entender algunos modulos del sistema operativo y poder ver el codigo) y el analisis del kernel (Visualizando tanto el codigo de algunos mecanimos, como la ejecucion en caliente de estos mecanismos). Permitiendo al estudiante una experiencia real de aprendizaje.
+
+2. **Ingeniero informatico**
+
+En la vida profesional el tener conocimientos del sistema operativo linux y toda la experiencia de estudiante permite usar Gnu/Linux para implementaciones robustas o sistemas embebidos (aqui cae IoT, Routers y otros dispositivos) o en la implementacion de nuevas tecnologias sobre sistemas Gnu/Linux. Todo un abanico de posibilidades de investigacion y implementacion tecnologica.
+
+3. **Usuario final**
+
+Un usuario final, utilizaria Gnu/Linux con la tranquilidad de su privacidad y la veracidad de tener un sistema operativo que funciona y funciona bien. Uno de los aspectos que hay que hacerle zoom es la privacidad del usuario final, que personas externas no tomen su informacion y la vendan o se las den a los gobiernos.
+
+**Opinion personal :** Estamos en la era de la informacion, donde la informacion recorre el mundo en cuestion de segundos, es una gran era, pero asi mismo tiene un doble filo, ya que las grandes empresas y gobiernos quieren tener acceso a nuestra informacion para poder tener control sobre las personas. No es paranoia (https://www.nytimes.com/es/tag/edward-snowden/), Esta en manos de nosotros defender nuestra privacidad y nuestra informacion. 
+
 ## Comparacion de Licencias
 
-## Instalacion de xubuntu(First Time Dude? Wellcome)
+
+
+## Instalacion de xubuntu(First Time Dude?)
 
 ### ¿Que es xubuntu?
 
