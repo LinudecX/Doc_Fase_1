@@ -108,6 +108,60 @@ Aunque el software privativo sea perjudicial para nuestros derechos como usuario
 
 ## Instalacion de xubuntu(First Time Dude? Wellcome)
 
+###¿Que es xubuntu?
+
+<p align="center">
+    <img src="imagenes/xubuntu.png" aling="center">
+</p>
+
+> Xubuntu is an elegant and easy-to-use operating system. Xubuntu comes with Xfce, which is a stable, light and configurable desktop environment.
+> It is perfect for those who want to make the most of their desktops, laptops and netbooks, featuring a modern look and enough features for efficient, daily usage. It works well on older hardware too.
+
+<p align="center" >Xubuntu es un sistema netamente ubuntu pero con un ambiente de escritorio(Los sistemas gnu/linux y sus derivados permiten montar sobre el sistema operativo diferentes ambientes de escritorio, son los encargados brindarle una interface mediana mente amigable al usuario) diferente al que viene por defecto en ubuntu, el ambiente de escritorio se llama XFCE, es un ambiente de escritorio mucha mas liviano, rapido y amigable con el usuario final. Si nuestro equipo no tiene tanto aguante grafico y quieres una interface amigable esta podria ser una solucion a esa necesidad.
+</p>
+<p align="center">
+Si miramos los requerimientos minimos que pide xubuntu podremos conclucuir que este es un es un sistema operativo para una maquina no tan buena en hardware.
+</p>
+
+* CPU: 1.0Ghz+ (needs to support PAE)
+* RAM: 512MiB+ for Desktop/LiveCD
+* Hard drive space: 7.5GB
+* Graphics card and monitor capable of 800×600 resolution
+
+Para tener una mejor experiencia grafica es recomendable tener 1G de memoria, 20GB en espacio de disco.
+
+Aunque existen sistemas mucho mas livianos que este.
+
+###Obtener Xubuntu
+
+Xubuntu se puede obtener en la pagina del proyecto www.xubuntu.org, existen varias formas de obtener la distro, por medio de torrent o de http, usaremos el protocolo http para realizar esta descarga, ingresamos a http://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/18.04/release/ y nos descargamos xubuntu-18.04-desktop-amd64.iso o para sistemas de 32 bits xubuntu-18.04-desktop-i386.iso.
+
+<p align="center">
+    <img src="imagenes/get_xubuntu.jpg">
+</p>
+
+###Formas de booteo y uso de una iso
+
+<p aling="justify">
+Para poder hacer uso de esa iso que recien descargamos, podriamos quemar un DVD con esta iso o crear una memoria booteable(se hara un laboratorio mas adelante) y usarla como LIVECD en un equipo(el modo LIVECD nos permite probar una distribucion linux sin tener que tenerla instalada en nuestro equipo, ya que el modo LIVECD se monta sobre la memoria ram y no sobre el disco duro). Otra forma de probar distribuciones es la virtualizacion(Es la creacion de una maquina a traves del software sienda esta una abstraccion de una maquina, la cual comparte recursos de la maquina anfitriona(maquina real) con la maquina huesped(maquina virtualizada)). De estas formas de profundizara posteriormente.
+</p>
+
+###Mensaje de carga de la distribucion
+
+<p aling="justify">
+Normalmente las distribuciones al cargar el sistema(ya sea instalado o en livecd) muestran la carga del sistema sobre el hardware, pero ya que xubuntu es una distribucion amigable con el usuario no le muestra esta informacion para que no se asuste.
+</p>
+
+<p align="center">
+    <img src="imagenes/install_1.jpg">
+</p>
+
+Despues de realizar la carga del sistema, aparece dos opciones, si quieremos montar el sistema como LIVECD o proceder a la instalacion. 
+
+###Instalacion
+
+###Comandos basicos de uso de directorios
+
 ## Referencias
 
 1. [Filosofia del sofware libre - MisionSucre - Stephenson Prieto](https://es.slideshare.net/Stephenson/filosofa-del-software-libre)
