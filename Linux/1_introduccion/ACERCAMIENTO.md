@@ -137,7 +137,7 @@ Aunque existen sistemas mucho mas livianos que este.
 Xubuntu se puede obtener en la pagina del proyecto www.xubuntu.org, existen varias formas de obtener la distro, por medio de torrent o de http, usaremos el protocolo http para realizar esta descarga, ingresamos a http://www.mirrorservice.org/sites/cdimage.ubuntu.com/cdimage/xubuntu/releases/18.04/release/ y nos descargamos xubuntu-18.04-desktop-amd64.iso o para sistemas de 32 bits xubuntu-18.04-desktop-i386.iso.
 
 <p align="center">
-    <img src="imagenes/get_xubuntu1.jpg">
+<img src="imagenes/get_xubuntu1.jpg">
 </p>
 
 ### Formas de booteo y uso de una iso
@@ -153,12 +153,56 @@ Normalmente las distribuciones al cargar el sistema(ya sea instalado o en livecd
 </p>
 
 <p align="center">
-    <img src="imagenes/install_1.jpg">
+<img src="imagenes/install_1.jpg">
 </p>
 
 Despues de realizar la carga del sistema, aparece dos opciones, si quieremos montar el sistema como LIVECD o proceder a la instalacion. 
 
+<p align ="center">
+<img src="imagenes/install_2.jpg">
+</p>
+
 ### Instalacion
+
+<p align ="center">
+<img src="imagenes/install_3.jpg">
+</p>
+
+<p align ="center">
+<img src="imagenes/install_4.jpg">
+</p>
+
+<p align ="center">
+<img src="imagenes/install_5.jpg">
+</p>
+
+<p align ="center">
+<img src="imagenes/install_6.jpg">
+</p>
+
+<p align ="center">
+<img src="imagenes/install_7.jpg">
+</p>
+
+<p align ="center">
+<img src="imagenes/install_8.png">
+</p>
+
+<p align ="center">
+<img src="imagenes/install_9.png">
+</p>
+
+<p align ="center">
+<img src="imagenes/install_10.png">
+</p>
+
+<p align ="center">
+<img src="imagenes/install_11.png">
+</p>
+
+<p align ="center">
+<img src="imagenes/install_12.png">
+</p>
 
 ### Comandos basicos de uso de directorios
 
