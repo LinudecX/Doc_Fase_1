@@ -241,7 +241,9 @@ Para empezar una interacion un poco mas cercana con el sistema operativo debemos
 
 **Moverse entre directorios**
 
+<p align="justify">
 Recien nosotros abrimos nuestra terminal de comandos ella misma nos ubica en nuestra carpeta personal (/home/miCarpetaPersonal) esta carpeta es nuestra area de trabajo en la cual podemos guardar nuestros archivos alli como Documentos, Descargas, Imagenes, Musica y Escritorio. para poder visualizar que archivos y carpetas tenemos dentro de nuestra carpeta personal ejecutar el comando 'ls', este comando nos listara todos los directorios y archivos.
+</p>
 
 <p imagen align="center">
 <img src"imagenes/ls.jpg">
@@ -255,11 +257,15 @@ Como podemos ver en la imagen, si visualizamos nuestros archivos por un gestor d
 <img src="imagenes/cd.jpg">
 </p>
 
-Otro comando es el comando cd, si yo quiero entrar a una de las carpetas que acabo de visualizar con el comando 'ls', solo debo colocar el comando 'cd nombreCaperta' y el nombre de la carpeta que yo quiero ingresar. Con estos dos comandos puedo navegar por mis directorios tanto de mi carpeta personal como otros archivos y carpetas del sistema. Pero que pasa si quiero devolverme a la carpeta anterior donde estaba ubicado, para eso son las carpetas ocultas de los puntos que antes hablabamos, al ejecutar el programa 'cd ..' y le pasamos como argumento al nombre de la carpeta '..', lo que nos estamos refiriendo es que vamos a ingresar a la carpeta atras de la carpeta donde estoy ubicado. cd tambien acepta como argumentos rutas largas de carpetas, por ejemplo si yo quisiera ingresar a mi carpeta personal 'cd /home/micarpeta', dentro de la carpeta 'home' van a estar todas las carpetas de los usuarios creados para el sistema (a excepcion de la carpeta del administrador **root**) entonces ahi estamos diciendo "voy a ir a la carpeta 'micarpeta' que esta ubicada dentro de la carpeta 'home'
+<p aling="justify">
+Otro comando es el comando cd, si yo quiero entrar a una de las carpetas que acabo de visualizar con el comando 'ls', solo debo colocar el comando 'cd nombreCaperta' y el nombre de la carpeta que yo quiero ingresar. Con estos dos comandos puedo navegar por mis directorios tanto de mi carpeta personal como otros archivos y carpetas del sistema. Pero que pasa si quiero devolverme a la carpeta anterior donde estaba ubicado, para eso son las carpetas ocultas de los puntos que antes hablabamos, al ejecutar el programa 'cd ..' y le pasamos como argumento al nombre de la carpeta '..', lo que nos estamos refiriendo es que vamos a ingresar a la carpeta atras de la carpeta donde estoy ubicado. cd tambien acepta como argumentos rutas largas de carpetas, por ejemplo si yo quisiera ingresar a mi carpeta personal 'cd /home/micarpeta', dentro de la carpeta 'home' van a estar todas las carpetas de los usuarios creados para el sistema (a excepcion de la carpeta del administrador root) entonces ahi estamos diciendo "voy a ir a la carpeta 'micarpeta' que esta ubicada dentro de la carpeta 'home'
+</p>
 
-**Red**
+**Administrar interfaces de red**
 
+<p align="justify">
 Uno de los comandos basicos de administracion de red, es el comando 'ifconfig', el comando ifconfig es un programa base del sistema, el cual podemos usar para consultar las interfaces de red que tiene mi equipo (por ejemplo wlan y la ethernet). vamos a realizar 3 cosas con este programa. 1) consulta de las interfaces de red que poseemos, 2) deshabilitar una de nuestras interfaces de red y 3) volver a habilitar nuestra interface que anteriormente dehabilitamos.
+</p>
 
 ```bash 
 ifconfig                            # consultar cuales son nuestras tarjetas de red
@@ -269,8 +275,10 @@ ifconfig                            # consultar cuales son nuestras tarjetas de 
 <img src="imagenes/ifconfig.jpg">
 </p>
 
+<p align="justify">
 Como podemos ver, al ejecutar nuestro comando de consulta podemos visualizar las interfaces de red que tenemos trabajando, la cual poseemos la **enp0s3** que seria equivalente a nuestro tarjeta de red ethernet, la otra interface local o **lo** la interface local es un mecanismo de red usado para referirse a si mismo (este computador) muy usado para testear software en fase de desarrollo, por eso cuando instalamos xampp podemos testear nuestro server web con http://localhost/. Tambien
 como podemos visualizar podemos encontra nuestro numero ip asigando en cada una de las interfaces(ethernet:10.0.2.15 y localhost:127.0.0.1) 
+</p>
 
 ```bash
 sudo ifconfig enp0s3 down                # deshabilitar la interface de red de ethernet
