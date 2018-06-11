@@ -299,6 +299,11 @@ sudo ifconfig enp0s3 up                  # habilitar la interface de red de ethe
 man ls
 man man
 ```
+
+<p align="center">
+<img src="imagenes/man_ls.jpg">
+</p>
+
 <p align="justify">
 Normalmente los programas que se instalan en linux vienen con su propia documentacion, para poder usar con mucho mas poder cada una de estas herramientas y poder saber como ejecutarlas y de que forma pasarle argumentos para habilitar otras funcionabilidades internas del programa.
 </p>
