@@ -237,7 +237,9 @@ Y nuestro sistema queda instalado, xubuntu al ser una distribucion muy amigable 
 
 ### Comandos basicos para moverse entre directorios, administracion de red, documentacion de los programas
 
+<p align="justify">
 Para empezar una interacion un poco mas cercana con el sistema operativo debemos usar la terminal, la terminal nos brinda una interfaces con los programas base y otros programas que tengamos instalados y la administracion de nuestro sistema mediante un conjunto de programas base del sistema operativo, el poder de la terminal es bastante poderosa a comparacion de solo la administracion por la interface grafica que nos brinda el sistema operativo. Para tener en cuenta de unos comandos base que poder defendernos un poco por medio de la terminal son los siguentes:
+</p>
 
 **Moverse entre directorios**
 
@@ -249,7 +251,7 @@ Recien nosotros abrimos nuestra terminal de comandos ella misma nos ubica en nue
 <img src"imagenes/ls.jpg">
 </p>
 
-<p aling="justify">
+<p align="justify">
 Como podemos ver en la imagen, si visualizamos nuestros archivos por un gestor de archivos visual podremos ver que tenemos el mismo resultado(lista los directorios y archivos) que al usar el comando ls, Aqui entre el poder de los comandos, yo por medio de comandos puedo habilitar unas opciones propias del programa por ejemplo cuando ejecutamos el mismo comando 'ls -a' con esto le estamos diciendo a nuestro programa ls que me liste todos los directorios y archivos asi esten ocultos. Podemos ver tenemos directorios ocultos y visualizamos que los directorios y archivos ocultos en linux, vemos que aparecen unos puntos en azul, esos puntos equivalen a carpetas o a posiciones relativas que hablaremos mas adelante de esto.
 </p>
 
@@ -257,7 +259,7 @@ Como podemos ver en la imagen, si visualizamos nuestros archivos por un gestor d
 <img src="imagenes/cd.jpg">
 </p>
 
-<p aling="justify">
+<p alig="justify">
 Otro comando es el comando cd, si yo quiero entrar a una de las carpetas que acabo de visualizar con el comando 'ls', solo debo colocar el comando 'cd nombreCaperta' y el nombre de la carpeta que yo quiero ingresar. Con estos dos comandos puedo navegar por mis directorios tanto de mi carpeta personal como otros archivos y carpetas del sistema. Pero que pasa si quiero devolverme a la carpeta anterior donde estaba ubicado, para eso son las carpetas ocultas de los puntos que antes hablabamos, al ejecutar el programa 'cd ..' y le pasamos como argumento al nombre de la carpeta '..', lo que nos estamos refiriendo es que vamos a ingresar a la carpeta atras de la carpeta donde estoy ubicado. cd tambien acepta como argumentos rutas largas de carpetas, por ejemplo si yo quisiera ingresar a mi carpeta personal 'cd /home/micarpeta', dentro de la carpeta 'home' van a estar todas las carpetas de los usuarios creados para el sistema (a excepcion de la carpeta del administrador root) entonces ahi estamos diciendo "voy a ir a la carpeta 'micarpeta' que esta ubicada dentro de la carpeta 'home'
 </p>
 
