@@ -129,10 +129,6 @@ Un usuario final, utilizaria Gnu/Linux con la tranquilidad de su privacidad y la
 **Opinion personal :** <p align="justify">Estamos en la era de la informacion, donde la informacion recorre el mundo en cuestion de segundos, es una gran era, pero asi mismo tiene un doble filo, ya que las grandes empresas y gobiernos quieren tener acceso a nuestra informacion para poder tener control sobre las personas. No es paranoia (https://www.nytimes.com/es/tag/edward-snowden/), Esta en manos de nosotros defender nuestra privacidad y nuestra informacion. 
 </p>
 
-## Comparacion de Licencias
-
-
-
 ## Instalacion de xubuntu(First Time Dude?)
 
 ### ¿Que es xubuntu?
@@ -355,3 +351,4 @@ Normalmente los programas que se instalan en linux vienen con su propia document
 6. [FSF](https://www.gnu.org/philosophy/free-sw.es.html)
 7. [FSF-ecured](https://www.ecured.cu/Free_Software_Foundation)
 8. [Tech Talk: Linus Torvals on git](https://www.youtube.com/watch?v=4XpnKHJAok8)
+9. [Lista de licencias](https://www.gnu.org/licenses/license-list.es.html)
