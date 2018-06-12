@@ -68,6 +68,45 @@ sudo apt-get install codeblocks
 <img src="imagenes/codeblocks_install.jpg"
 </p>
 
+<p align="justify">
+Despues de ejecutar el comando de instalacion (asi tal cual como lo hicimos con el compilador gcc) codeblocks instalara las dependencias que necesitara para ejecutarse y quedara instalado dentro de nuestro equi, en xubuntu lo podran buscar en el menu y en el submenu "Desarrollo" o "Programacion" con el icono de una palita, o tambien podrian llamarlo desde una terminal de comandos solo escribiendo codeblocks.
+</p>
+
+#### Primera vista y algunas configuraciones
+
+<p align="center">
+<img src="imagenes/first_run.jpg">
+</p>
+
+<p align="justify">
+Al ejecutar nuestro ide, nos mostrar una lista de los compiladores que ha detectado sobre nuestra maquina, como podemos ver el listado de compiladores que soporta codeblocks es bastante amplio, pero como solo nosotros usaremos gcc por ahora, ese sera el que seleccionaremos y lo setearemos por default.
+</p>
+
+<p align="center">
+<img src="imagenes/view_ide.jpg">
+</p>
+
+<p align="justify">
+Nos encontraremos con esta primera vista. Desde aqui podriamos antes de sentarnos a tirar miles y miles lineas  de codigo debemos realizar una preconfiguraciones para trabajar un poco mas comodos.
+</p>
+
+<p align="center">
+<img src="imagenes/compiler_codeblocks">
+</p>
+
+<p align="justify">
+Primeramente entraremos a las configuraciones del compilador para verificar que todo este bien, en este primera imagen se puede apreciar que el compilador gcc tiene diferentes opciones de compilacion(igual esto se ira viendo sobre la marcha y se profundizara en la segunda fase de la mano con make) por ejemplo si queremos compilar para que el binario se ejecute en maquinas con arquitectura de 32 bits o de 64 bits, normalmente se targetea  a maquinas de 32 ya que en algunos casos cuando se ejecuta un binario para una maquina de 32 bits en una maquina de 64 bits puede que exista la compatibilidad y se ejecute.
+</p>
+
+<p align="center">
+<img src="imagenes/file_compiling.jpg">
+</p>
+
+<p align="justify">
+En la ventana "Toolchain executables" podremos ver que ejecutables estan cargados para realizar la tarea de compilacion, si vemos bien el mensaje en rojo vemos que nos esta definiendo que la mayoria de programas deben existir en la ruta /usr/bin/[aqui-los-programas]. Y ejecutamos desde la consola "ls -a /usr/bin" podemos encontrar todos los binarios alli, hasta los binarios del sistema.  
+</p>
+
+
 ### Sublime + Pluggins
 
 ### Vim + Some Weird Stuff
