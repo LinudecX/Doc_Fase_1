@@ -64,7 +64,7 @@ Permite realizar Debugging por medio de una interface a GDB (GDB es un programa 
 ```bash
 sudo apt-get install codeblocks
 ```
-<p align="justify">
+<p align="center">
 <img src="imagenes/codeblocks_install.jpg"
 </p>
 
