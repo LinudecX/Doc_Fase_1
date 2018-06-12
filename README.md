@@ -42,6 +42,7 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
 
 ## Temario de Lenguaje C
 1. Configurando ambiente de desarrollo
+    * Instalar compilador(Linux)
     * Codeblocks
     * Atom + Pluggins
     * Vim + Some Weird Stuff
