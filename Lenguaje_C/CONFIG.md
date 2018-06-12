@@ -135,7 +135,7 @@ Este archivo lo encontramos dentro del wiki de codeblocks, este archivo tiene un
 </p>
 
 ```bash
-mv DondeEstaElarchivo/themes.conf ~/.config/codeblocks.conf
+mv DondeEstaElArchivo/themes.conf ~/.config/codeblocks.conf
 ```
 
 <p align="justify">
@@ -210,11 +210,19 @@ Compile and Run :).
 Cuando queremos hacerle debugging a un programa es por que queremos encontrar errores logicos de programacion, haciendole una repuracion linea por linea y visualizar todas las operaciones que se hacen por debo de la capa de C (en asm), tambien nos permite visualizar como se esta comportando el stack de un programa u otras funcionabilidades especificas.(para entrar en este modo, es con el play de color rojo).
 </p>
 
+
+<p align="center">
+<img src="imagenes/set_breakpoint.jpg">
+</p>
+
+Para setear Breakpoits(Puntos de stop por asi decirlo donde seteamos un punto en el codigo que sea un punto de stop en el momento de debug y se detenga en esa linea para nosotros poder realizar las respectivas ) con la tecla F5 y el cursor del teclado sobre la linea donde se pondra el breakpoint.
+
+
 <p align="center">
 <img src="imagenes/debug.jpg">
 </p>
 
-(Este tema se ira tratando de abordar con los ejercicios que se haran haciendo)
+(Este tema se ira tratando de abordar con los ejercicios propuestos).
 
 ### Sublime + Pluggins
 
