@@ -65,7 +65,7 @@ Permite realizar Debugging por medio de una interface a GDB (GDB es un programa 
 sudo apt-get install codeblocks
 ```
 <p align="justify">
-<img src="imagenes/code_blocks_install.jpg"
+<img src="imagenes/codeblocks_install.jpg"
 </p>
 
 ### Sublime + Pluggins
