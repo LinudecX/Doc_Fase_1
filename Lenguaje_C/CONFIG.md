@@ -163,7 +163,7 @@ Para poder entrar a codificar y compilar nuestros codigos fuentes, lo debemos ha
 Cuando iniciamos un nuevo proyecto debemos definir que tipo de proyect sera, cada uno de estos tipos de proyectos son especificos para un problema por ejemplo un proyecto "AVR Project" sera usado cuando necesitemos escribir algun codigo en C para AVRs. Por ahora solo seleccionaremos "Console Application".
 
 <p align="center">
-<img src="imagenes/path_project">
+<img src="imagenes/path_project.jpg">
 </p>
 
 <p align="justify">
@@ -179,7 +179,7 @@ Ahora debemos seleccionar el lenguaje en el cual codificaremos nuestro proyecto,
 </p>
 
 <p align="center">
-<img src="imaganes/select_compiler_debug.jpg">
+<img src="imagenes/select_compiler_debug.jpg">
 </p>
 
 <p align="justify">
@@ -203,7 +203,7 @@ Compile and Run :).
 #### Debug
 
 <p align="center">
-<img src="imagenes/tools_run_debug">
+<img src="imagenes/tools_run_debug.jpg">
 </p>
 
 <p align="justify">
