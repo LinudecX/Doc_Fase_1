@@ -106,6 +106,115 @@ Primeramente entraremos a las configuraciones del compilador para verificar que 
 En la ventana "Toolchain executables" podremos ver que ejecutables estan cargados para realizar la tarea de compilacion, si vemos bien el mensaje en rojo vemos que nos esta definiendo que la mayoria de programas deben existir en la ruta /usr/bin/[aqui-los-programas]. Y ejecutamos desde la consola "ls -a /usr/bin" podemos encontrar todos los binarios alli, hasta los binarios del sistema.  
 </p>
 
+<p align="center">
+<img src="imagenes/autosave.jpg">
+</p>
+
+
+<p align="justify">
+Otra configuracion que debemos hacer es la funcion de "auto guardado", para que nuestro IDE vaya auto guardando las modificaciones que vamos haciendo sobre el codigo, para no perder nuestro trabajo(experiencia personal). Para llegar a esta opcion debemos ir a "Configuraciones de Entorno". Vamos a poner el auto guardado en todos los archivos cada un minuto y en todos los proyecto cada 1 minuto y que guarde en el archivo original.
+</p>
+
+
+<p align="center">
+<img src="imagenes/themes.jpg">
+</p>
+
+<p align="justify">
+En este mismo menu en la parte de "Syntax highlighting" podremos cambiar de color nuestro editor de texto, colocandole un color a cada estamento del lenguaje C. Cada theme tiene una configuracion diferentes y pues definida por el programador. Si deseamos agregar diferentes themes para nuestro editor de texto del IDE, debemos descarganos el archivo ubicado:
+</p>
+
+[themes.conf](files/themes.conf)
+
+<p align="center">
+<img src="imagenes/color_set_url.jpg">
+</p>
+
+<p align="justify">
+Este archivo lo encontramos dentro del wiki de codeblocks, este archivo tiene una variedad de themes predifinidos por otros usuario que usan codeblocks, entonces solo tenemos que exportar esta configuracion a nuestro IDE. para hacer eso debemos ejecutar el comando de mover un archivo 
+</p>
+
+```bash
+mv DondeEstaElarchivo/themes.conf ~/.config/codeblocks.conf
+```
+
+<p align="justify">
+Despues de mover el archivo a la carpeta de configuraciones del codeblocks debemos reiniciar nuestro codeblock y tendriamos en nuestro IDE cargados todos los themes publicos.
+</p>
+
+<p align="center">
+<img src="imagenes/colors_full.jpg">
+</p>
+
+#### Creando un nuevo proyecto
+
+<p align="center">
+<img src="imagenes/new_project.jpg">
+</p>
+
+<p align="justify">
+Para poder entrar a codificar y compilar nuestros codigos fuentes, lo debemos hacer por medio de un nuevo proyecto. Donde cada proyecto podra tener diferentes configuraciones y estaran aislados unos de otros. 
+</p>
+
+<p align="center">
+<img src="imagenes/select_type_project.jpg">
+</p>
+
+Cuando iniciamos un nuevo proyecto debemos definir que tipo de proyect sera, cada uno de estos tipos de proyectos son especificos para un problema por ejemplo un proyecto "AVR Project" sera usado cuando necesitemos escribir algun codigo en C para AVRs. Por ahora solo seleccionaremos "Console Application".
+
+<p align="center">
+<img src="imagenes/path_project">
+</p>
+
+<p align="justify">
+Al iniciar un nuevo proyecto debemos definir el nombre del proyecto y el directorio donde estara guardado. El IDE nos generara un archivo .cbp que define las configuraciones del proyecto para poderlo abrir de nuevo con codeblocks.
+</p>
+
+<p align="center">
+<img src="imagenes/select_c.jpg">
+</p>
+
+<p align="justify">
+Ahora debemos seleccionar el lenguaje en el cual codificaremos nuestro proyecto, (Normalmente siempre escojeremos C, tal vez en una fase mas avanzada trataremos algo de C++ pero puede que si, puede que no).
+</p>
+
+<p align="center">
+<img src="imaganes/select_compiler_debug.jpg">
+</p>
+
+<p align="justify">
+Ahora seleccionaremos el compilador a usar, las opciones de compiladores nos saldran de acuerdo a la cantidad de compiladores que tengamos instalados en nuestra maquina, como vimos en el principio codeblocks soporta muchos compiladores. Al seleccionar un compilador automaticamente cargar el programa que nos ayudara a depurar nuestros programas y tambien se define las dos carpetas "Debug" donde aqui se hacen las pruebas de desarrollo y "Release" quedara la version liberada de nuestro codigo cuando ya acabemos de codificarlo(eso lo debemos decidir nosotros en el momento de compilacion).
+</p>
+
+<p align="center">
+<img src="imagenes/workspace_projects.jpg">
+</p>
+
+<p align="justify">
+Al terminar de crear nuestro nuevo proyecto, nuestra vista sera algo asi, donde tendremos en la parte lateral izquierda nuestro workspace (el workspace es donde estaran todos los proyectos abiertos, puede que estos proyectos tengan relacion entre otros proyectos pero en cierta manera aqui todos los proyectos que abramos estaran ubicados en esta parte de la ventana), En el centro tenemos nuestro editor de texto, en la parte vertical abajo tenemos nuestra ventanas de Logs general tanto de compilacion como del IDE(mucho ojo en esta parte ya que aqui el compilador nos marcara los errores de programacion que sean de sintaxis mas no logicos) y en la parte superior la barra de tareas con nuestra barra de acciones, donde podremos compilar o ejecutar o debuggear nuestro proyecto.
+</p>
+
+<p align="center">
+<img src="imagenes/run_program.jpg">
+</p>
+
+Compile and Run :).
+
+#### Debug
+
+<p align="center">
+<img src="imagenes/tools_run_debug">
+</p>
+
+<p align="justify">
+Cuando queremos hacerle debugging a un programa es por que queremos encontrar errores logicos de programacion, haciendole una repuracion linea por linea y visualizar todas las operaciones que se hacen por debo de la capa de C (en asm), tambien nos permite visualizar como se esta comportando el stack de un programa u otras funcionabilidades especificas.(para entrar en este modo, es con el play de color rojo).
+</p>
+
+<p align="center">
+<img src="imagenes/debug.jpg">
+</p>
+
+(Este tema se ira tratando de abordar con los ejercicios que se haran haciendo)
 
 ### Sublime + Pluggins
 
