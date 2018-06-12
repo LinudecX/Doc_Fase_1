@@ -43,14 +43,29 @@ gcc --version
 Con esto ya tenemos nuestro compilador basico para poder empezar a trabajar, idenpendiente de que forma se escoja.
 </p>
 
-## Configuracion de IDEs
-
-
+## Configuracion de IDE o de formas alternativas de trabajo
 
 ### CodeBlocks
 
 <p align="center">
 <img src="imagenes/codeblocks_logo.png">
+</p>
+
+<p align="justify">
+Codeblocks es un IDE libre, que esta liberado bajo la licencia(GPL v3). Creado por la gran demanda de usuarios. Es un IDE multiplataforma (puede ejecutarse en Linux, Mac, Windows), esta escrito en C++ sin lenguajes interpretados ni con librerias propietarias. Soporta una gran variedad de compiladores, es rapido y personalizable, brinda soporte para usar diferentes nucleos, permite realizar cross compiling(para circuitos integrados avr, arm y otro. Brinda una gran indepencia de proyectos(aislamiento).
+</p>
+
+<p align="justify">
+Permite realizar Debugging por medio de una interface a GDB (GDB es un programa que permite depurar nuestros programas para encontrar erores o para comprender como se comporta el binario). 
+</p>
+
+#### Instalacion 
+
+```bash
+sudo apt-get install codeblocks
+```
+<p align="justify">
+<img src="imagenes/code_blocks_install.jpg"
 </p>
 
 ### Sublime + Pluggins
