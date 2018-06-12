@@ -91,7 +91,7 @@ Nos encontraremos con esta primera vista. Desde aqui podriamos antes de sentarno
 </p>
 
 <p align="center">
-<img src="imagenes/compiler_codeblocks">
+<img src="imagenes/compiler_codeblocks.jpg">
 </p>
 
 <p align="justify">
@@ -99,7 +99,7 @@ Primeramente entraremos a las configuraciones del compilador para verificar que 
 </p>
 
 <p align="center">
-<img src="imagenes/file_compiling.jpg">
+<img src="imagenes/files_compiling.jpg">
 </p>
 
 <p align="justify">
