@@ -13,14 +13,14 @@ Este movimiento social tiene como finalidad despertar la libertad del usuario, q
 
 **¿Pero quien inicio esto?**
 
-<p align="justify">La iniciativa empieza por Richard Stallman, fundador del movimiento por el software libre en el mundo. (Cabe decir que el creo GCC, GNU Emacs y el depurador GDB bajo el proyecto de GNU). En 1983 (despues de tener algunos lios tras la firma de un acuerdo de no divulgacion para que no liberara informacion y codigo sobre algunas de las implementaciondes privativas realizadas por parte del la compañia Symbolics) anuncio el inicio del proyecto GNU, que tiene como objetico crear un sistema operativo completamente libre, que fuera un alternativa completamente libre de usar UNIX y que fuera compatible con UNIX(GNU  significa GNU No es Unix).</p>
+<p align="justify">La iniciativa empieza por Richard Stallman, fundador del movimiento por el software libre en el mundo. (Cabe decir que el creo GCC, GNU Emacs y el depurador GDB bajo el proyecto de GNU). En 1983 (despues de tener algunos lios tras la firma de un acuerdo de no divulgacion para que no liberara informacion y codigo sobre algunas de las implementaciondes privativas realizadas por parte del la compañia Symbolics) anuncio el inicio del proyecto GNU, que tiene como objetico crear un sistema operativo completamente libre, que fuera una alternativa completamente libre de usar UNIX y que fuera compatible con UNIX(GNU  significa GNU No es Unix).</p>
 
 <p align="center">
     <img src="imagenes/richard-stallman.png" width="200">
     <img src="imagenes/gnu.png" width="200">
 </p>
 
-<p align="justify">Al poco tiempo de esto Fundo la organizacion Free Software Foundation (FSF) sin animo de lucro, con la mision de promover las libertades del usuario y defendiendolas a capa y espada.(por ejemplo reciemente estuvieron protestando por la desicion tomada de la neutralidad de internet). Frecuentemente despliega grandes campañas de promocion contra las aplicaciones informaticas de software privativo, entre las principales funciones tienen:</p>
+<p align="justify">Al poco tiempo de esto fundo la organizacion Free Software Foundation (FSF) sin animo de lucro, con la mision de promover las libertades del usuario y defendiendolas a capa y espada.(por ejemplo reciente mente estuvieron protestando por la desicion tomada de la neutralidad de internet). Frecuentemente despliega grandes campañas de promocion contra las aplicaciones informaticas de software privativo, entre las principales funciones tienen:</p>
 
 * Promover el uso de la distribucion GNU/Linux(linuxfree)
 * Mantener el desarrollo del sistema operativo GNU
@@ -45,7 +45,7 @@ Este movimiento social tiene como finalidad despertar la libertad del usuario, q
 </p>
 
 > **Definicion temporal(Luego se profudizara en esto)**
-> **KERNEL =** Nucleo o Kernel es un software que constituye la parte fundamental del sistema operativo, y se define como la parte que se ejecuta en modo privilegiado tambien conocido como modo kernel. Es el principal respoable de facilitar a los programas acceso seguro al hardware de la computadora, es el encargado de gestionar recursos, tambien se encarga de decidir que programa podra usar un dispositivo de hardware y durante cuanto tiempo. Acceder al hardware es un trabajo realmente complejo y normalmente los kernel tienen una capa de abstraccion de hardware, la cual facilita esta tarea.
+> **KERNEL =** Nucleo o Kernel es un software que constituye la parte fundamental del sistema operativo, y se define como la parte que se ejecuta en modo privilegiado tambien conocido como modo kernel. Es el principal responsable de facilitar a los programas acceso seguro al hardware de la computadora, es el encargado de gestionar recursos, tambien se encarga de decidir que programa podra usar un dispositivo de hardware y durante cuanto tiempo. Acceder al hardware es un trabajo realmente complejo y normalmente los kernel tienen una capa de abstraccion de hardware, la cual facilita esta tarea.
 
 <p align="justify">
 GNU es un conjunto de herramientas algunas desarrolladas por el proyecto GNU y otras (de igual manera libres) tomadas de otros proyectos. Empezaron por el desarrollo de modulos que cumplieran ciertas tareas, entre esos Richard Stallman programo el compilador GCC. Para el kernel estaban realizando el Hurd, que es el nombre del kernel inicial de GNU, pero para la fecha no funcionaba completamente para ser puesto en produccion, afortunamente en 1991 Linus Torvals programo un kernel complatible con UNIX y lo denomino Linux, primeramente era un kernel privativo pero en 1992 lo convirtio en software libre. La combinacion del sistema operativo Gnu y del Kernel da al nombre GNU/Linux (Gnu con linux).</p>
@@ -57,25 +57,24 @@ En lo largo del tiempo, el desarrollo del kernel tuvo una colaboracion muy grand
 De las distribuciones libres podemos consultar en https://www.gnu.org/distros/free-distros.html (donde podremos encontrar distribuciones completamente libres, sin codigo privativos en ellas, como por ejemplo trisquel o ProteanOS para sistemas embebidos) y no libres que podremos encontrar todo una gama de colores a nivel de sistema operativo en https://distrowatch.com/?language=ES (tanto para sistemas desktop o servidores o sistemas embebidos).</p>
 
 
-**iBeneficios y Contras de usar software totalmente libre**
+**Beneficios y Desventajas de usar software totalmente libre**
 
 > ¿Como se aprende a escribir bien el codigo? Con leer mucho codigo y escribir mucho codigo!!!
 
 1. **Beneficios**
     * Al tener acceso al codigo fuente de las aplicaciones y del sistema operativo, lleva al entendimiento y al habito de lectura de codigo fuente, y esto a largo plazo lleva a que seamos mejores desarrolladores y tengamos una mejor compresion de la maquina
     * Seguridad
-    * Robustex
+    * Robustez
     * Correcion de programas
-    * Expansion
     * Consumo minimo de hardware
     * Estabilidad
     * Control de informacion
     * Independiencia tecnologica
-    * Al usar y comprender el software libre es lleva un estado en el cual una comunidad de desarrolladores pongan una linea fuerte ante el software privativo creando vias alternativas para la evolucion de la tecnologia.
+    * Al usar y comprender el software libre es llegar un estado, en el cual una comunidad de desarrolladores pongan una linea fuerte ante el software privativo creando vias alternativas para la evolucion de la tecnologia.
     * GoodBye agencias de espionaje y crackers, Teniendo unas buenas contramedidas en el sistema operativo no sera tan facil de penetrar y/o ser backdoorizado por personas externas
     * Gran apoyo tecnico por parte de la comunidad del software libre
 
-2. **Contra**
+2. **Desventaja**
     * Al rozar un poco la tendencia radical de solo usar software libre estariamos (o no) limitando el uso de nuestra maquina al no usar software privativo 
     * Todas las desventajas son superables teniendo en cuenta que esta en juego nuestra libertad
 
@@ -85,7 +84,7 @@ De las distribuciones libres podemos consultar en https://www.gnu.org/distros/fr
 </p>
 
 
-**Open Harware :** <p align="justify">Existe un movimiento similar para el hardware (por ejemplo arduino es uno de estos proyectos de hardware libre) el cual el autor del hardware libra los esquimaticos y el firmware del hardware para el uso del publico bajo diferentes mecanismos de *copyleft* MAS INFORMACION en https://www.ecured.cu/Hardware_libre.</p>
+**Open Harware :** <p align="justify">Existe un movimiento similar para el hardware (por ejemplo arduino es uno de estos proyectos de hardware libre) el cual el autor del hardware libera los esquematicos y el firmware del hardware para el uso del publico bajo diferentes mecanismos de *copyleft* MAS INFORMACION en https://www.ecured.cu/Hardware_libre.</p>
 
 
 ***Opinion personal (@s0d0m4) :***

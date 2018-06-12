@@ -10,7 +10,8 @@ La **FASE 1** tiene como objetivo principal ser el primer acercamiento del semil
 
 ## Enfoque
 
-Muchos de los temas tratados en la **FASE 1** son basados en la certificacion **LPCI-1 System Administrator** (algunas otras referencias estaran al final de cada seccion) y en cuanto a **Lenguaje C** sera un breve repaso de algunos de los aspectos importantes de C ,compilar programas en el sistema operativo y realizar maratones internas cada cierto tiempo para colocar en practica los temas tratados.
+Muchos de los temas tratados en la **FASE 1** son basados en la certificacion **LPCI-1 System Administrator** (algunas otras referencias estaran al final de cada seccion) y en cuanto a **Lenguaje C** sera un breve repaso de algunos de los aspectos importantes de C ,compilar programas en el sistema operativo y realizar maratones internas cada cierto tiempo para colocar en practica los temas tratados, los temas tratados estaran basados en el libro "The ANSI C
+PROGRAMMING LANGUAGE" Segunda edicion de Brian W. Kernighan y Dennis M.Ritchie y de otros recusos externos ( como por ejemplo https://www.w3resource.com/c-programming-exercises/ )
 
 ## Comentario
 
@@ -44,13 +45,4 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
     * Codeblocks
     * Atom + Pluggins
     * Vim + Some Weird Stuff
-2. Repaso
-3. Tipos de datos
-    * Operadores
-    * Tipo de datos complejos
-    * Estructuras
-    * Punteros
-4. Administracion de memoria
-5. Manejo de archivos y streams
-6. Organizando el codigo
-7. Directivas del preprocesado
+2. Introduccion
