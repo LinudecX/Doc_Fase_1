@@ -43,9 +43,7 @@ gcc --version
 Con esto ya tenemos nuestro compilador basico para poder empezar a trabajar, idenpendiente de que forma se escoja.
 </p>
 
-## Configuracion de IDE o de formas alternativas de trabajo
-
-### CodeBlocks
+## CodeBlocks
 
 <p align="center">
 <img src="imagenes/codeblocks_logo.png">
@@ -59,7 +57,7 @@ Codeblocks es un IDE libre, que esta liberado bajo la licencia(GPL v3). Creado p
 Permite realizar Debugging por medio de una interface a GDB (GDB es un programa que permite depurar nuestros programas para encontrar erores o para comprender como se comporta el binario). 
 </p>
 
-#### Instalacion 
+### Instalacion 
 
 ```bash
 sudo apt-get install codeblocks
@@ -72,7 +70,7 @@ sudo apt-get install codeblocks
 Despues de ejecutar el comando de instalacion (asi tal cual como lo hicimos con el compilador gcc) codeblocks instalara las dependencias que necesitara para ejecutarse y quedara instalado dentro de nuestro equi, en xubuntu lo podran buscar en el menu y en el submenu "Desarrollo" o "Programacion" con el icono de una palita, o tambien podrian llamarlo desde una terminal de comandos solo escribiendo codeblocks.
 </p>
 
-#### Primera vista y algunas configuraciones
+### Primera vista y algunas configuraciones
 
 <p align="center">
 <img src="imagenes/first_run.jpg">
@@ -146,7 +144,7 @@ Despues de mover el archivo a la carpeta de configuraciones del codeblocks debem
 <img src="imagenes/colors_full.jpg">
 </p>
 
-#### Creando un nuevo proyecto
+### Creando un nuevo proyecto
 
 <p align="center">
 <img src="imagenes/new_project.jpg">
@@ -200,7 +198,7 @@ Al terminar de crear nuestro nuevo proyecto, nuestra vista sera algo asi, donde 
 
 Compile and Run :).
 
-#### Debug
+### Debug
 
 <p align="center">
 <img src="imagenes/tools_run_debug.jpg">
@@ -223,11 +221,4 @@ Para setear Breakpoits(Puntos de stop por asi decirlo donde seteamos un punto en
 </p>
 
 (Este tema se ira tratando de abordar con los ejercicios propuestos).
-
-### Sublime + Pluggins
-
-### Vim + Some Weird Stuff
-
-## Referencias
-
 

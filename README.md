@@ -41,9 +41,7 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
 11. Seguridad
 
 ## Temario de Lenguaje C
-1. Configurando ambiente de desarrollo
-    * Instalar compilador(Linux)
-    * Codeblocks
-    * Atom + Pluggins
-    * Vim + Some Weird Stuff
+1. [Configurando ambiente de desarrollo](/Lenguaje_C/CONFIG.md)
+    * [Instalar compilador](/Lenguaje_C/CONFIG.md#configuracion-de-ambiente-de-desarrollo)
+    * [Codeblocks](/Lenguaje_C/CONFIG.md#codeblocks) 
 2. Introduccion
