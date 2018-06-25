@@ -44,8 +44,8 @@ Los usuarios finales, son aquellos usuarios que no tienen conocimiento tecnico s
 Ejemplos de GUI
 </p>
 <p align="center">
-<img src="imagenes/GUI_WINDOWS.png" width="500">
-<img src="imagenes/gui_linux.jpg" width="500">
+<img src="imagenes/GUI_WINDOWS.png" width="300">
+<img src="imagenes/gui_linux.jpg" width="300">
 </p>
 
 
@@ -61,8 +61,8 @@ Los administradores del sistema operativo, son aquellos usuarios que tienen cono
 </p>
 
 <p align="center">
-<img src="imagenes/cli_linux.jpg" width="500">
-<img src="imagenes/CLI_WINDOWS.png" width="500">
+<img src="imagenes/cli_linux.jpg" width="300">
+<img src="imagenes/CLI_WINDOWS.png" width="300">
 </p>
 
 ##### **Desarrolladores =** Interface de programacion (API)
