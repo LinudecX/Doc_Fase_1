@@ -37,20 +37,20 @@ Si vemos desde el punto de vista desde usuario podremos obtener 3 interfaces o e
 ##### **Usuarios finales =** Interface de ejecucion y trabajo sencillo (GUI).
 
 <p align="justify">
-Los usuarios finales, son aquellos usuarios que no tienen conocimiento tecnico sobre el sistema operativo y su finalidad es usar el sistema operativo para el dia a dia (trabajo, ofimatica, redes sociales, etc). El aspecto que tiene esta interface es completamente grafica y lleva como nombre GUI (Graphical User Interface). La GUI de un sistema operativo es un programa informatico que actua como una interface de usuario, usando un conjunto de imagenes y objetos graficos, brindando un entorno visual sencillo para permitir la comunicacion del sistema operativo y el usuario final. (por ejemplo windows tiene el proceso explorer.exe que es el encargado de darle todo el aspecto visual a sistema operativo, si buscamos diferentes entornos graficos para linux encontramos de todas las formas y sabores).
+Los usuarios finales, son aquellos usuarios que no tienen conocimiento tecnico sobre el sistema operativo y su finalidad es usar el sistema operativo para el dia a dia (trabajo, ofimatica, redes sociales, etc). El aspecto que tiene esta interface es completamente grafica y lleva como nombre GUI (Graphical User Interface). La GUI de un sistema operativo es un programa informatico que actua como una interface de usuario, usando un conjunto de imagenes y objetos graficos, brindando un entorno visual sencillo para permitir la comunicacion del sistema operativo y el usuario final. (por ejemplo windows tiene el proceso explorer.exe que es el encargado de darle todo el aspecto visual a sistema operativo, si buscamos diferentes entornos graficos para linux encontramos de todas las formas y sabores). Acontinuacion podremos ver dos tipos de GUI totalmente diferentes, entre el usuario se familiariza con el sistema, podra personalizar la GUI a su antojo.
 </p>
 
-<p align="center">
-Ejemplos de GUI
-</p>
+
 <p align="center">
 <img src="imagenes/GUI_WINDOWS.png" width="300">
 <img src="imagenes/gui_linux.jpg" width="300">
 </p>
 
+<p align="justify">
+Una buena forma de ver como es mas o menos la arquitectua del servicio GUI de los sistemas operativos GNU/linux, se empieza con el usuario interacturando con la interface grafica (pueden existir muchos tipos de interface grafica como gnome o kde o xfce), Luego viene el protocolo de comunicacion entre la interface grafica y el servidor de pantalla, el cual tiene comunicacion directa con el gestor de ventanas, y el servidor de pantalla o tambien conocido como servidor grafico tiene interaccion directa con el kernel, el kernel se encarga de hacer las manipulaciones necesarias en el hardware para poder brindar el uso de la GUI.
+</p>
 
 <p align="center">
-Arquitectura de la parte grafica de un sistema operativo
 <img src="imagenes/GUI_arch.png">
 </p>
 
@@ -58,6 +58,10 @@ Arquitectura de la parte grafica de un sistema operativo
 
 <p align="justify">
 Los administradores del sistema operativo, son aquellos usuarios que tienen conocimiento tecnico de la configuracion y administracion del sistema y se necesita expandir mas la interface con la que interactuan, ya que deben acceder a los servicios del sistema. La interface de administracion se extiende a un lenguaje sencillo para dar instrucciones al sistema operativo por medio de comandos llamada CLI (Console Line Interface). Esta extension se llama shell, es una interprete de comandos del sistema que provee una interface administrativa para acceder a los servicios del sistema operativo. La mayoria de instrucciones que interpreta o se ejecutan dentro de la shell son programas ubicados dentro de ciertas carpetas del sistema (ejem: Windows -> C:/Windows/System32 o Linux -> /usr/bin ), Estos programas estan hechos especialmente para ser ejecutados via la linea de comandos.
+</p>
+
+<p align="justify">
+Acontinuacion veremos dos ejemplos de como consultar los programas que se estan ejecutando en la maquina, tanto en linux como en windows respectivamente.
 </p>
 
 <p align="center">
