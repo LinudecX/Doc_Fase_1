@@ -25,8 +25,7 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
         * [¿Porque usar sistemas basados en Gnu con kernel Linux?](Linux/1_introduccion/ACERCAMIENTO.md#por-que-usar-un-sistema-gnu-con-kernel-linux)
         * [Instalacion de xubuntu](Linux/1_introduccion/ACERCAMIENTO.md#instalacion-de-xubuntufirst-time-dude)
         * [Referencias](Linux/1_introduccion/ACERCAMIENTO.md#referencias)
-    * Sistema Operativo
-    * GNU != Linux
+    * [Sistemas Operativos - Teoria](Linux/1_introduccion/SISTEMASOPERATIVOS.md)
     * Virtualizacion
     * Nociones para el uso de la terminal
 2. Arquitectura del sistema
@@ -42,6 +41,6 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
 
 ## Temario de Lenguaje C
 1. [Configurando ambiente de desarrollo](/Lenguaje_C/CONFIG.md)
-    * [Instalar compilador](/Lenguaje_C/CONFIG.md#configuracion-de-ambiente-de-desarrollo)
-    * [Codeblocks](/Lenguaje_C/CONFIG.md#codeblocks) 
+    * [Instalar compilador](/Lenguaje_C/CONFIG.md#instalacion-de-compilador-y-herramientas-necesariaslinux)
+    * [Codeblocks](/Lenguaje_C/CONFIG.md#codeblocks)
 2. Introduccion
