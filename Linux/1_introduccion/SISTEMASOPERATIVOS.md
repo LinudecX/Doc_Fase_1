@@ -34,40 +34,35 @@ El sistema operativo envuelve el hardware en una capa abstracta permitiendonos a
 Si vemos desde el punto de vista desde usuario podremos obtener 3 interfaces o entornos de trabajo, estas interfaces o entornos de trabajo nos brinda una forma amigable de trabajo sobre el sistema operativo. Ya que dentro de este sistema informatico tenemos 3 roles a simple vista (Usuario final, Administradores, Programadores). El sistema operativo suele proporcionar utilidades basicas para que el usuario pueda desempeñar diferentes tareas, aprovechando las interfaces dadas por el sistema operativo. Por ejemplo trabajar con discos y con archivos, Ejecutar aplicaciones (cargador de programas), imprimir, administracion del sistema o usar funciones del sistema para escribir sus propias aplicaciones.
 </p>
 
-##### **Usuarios finales =** Interface de ejecucion y trabajo sencillo.
+##### **Usuarios finales =** Interface de ejecucion y trabajo sencillo (GUI).
 
 <p align="justify">
-Los usuarios finales, son aquellos usuarios que no tienen conocimiento tecnico sobre el sistema operativo y su finalidad es usar el sistema operativo para el dia a dia (trabajo, ofimatica, redes sociales, etc). El aspecto que tiene esta interface es completamente grafica y lleva como nombre GUI (**Graphical User Interface**). La GUI de un sistema operativo es un programa informatico que actua como una interface de usuario, usando un conjunto de imagenes y objetos graficos, brindando un entorno visual sencillo para permitir la comunicacion del sistema operativo y el usuario final. (por ejemplo windows tiene el proceso explorer.exe que es el encargado de darle todo el aspecto visual a sistema operativo, si buscamos diferentes entornos graficos para linux encontramos de todas las formas y sabores).
+Los usuarios finales, son aquellos usuarios que no tienen conocimiento tecnico sobre el sistema operativo y su finalidad es usar el sistema operativo para el dia a dia (trabajo, ofimatica, redes sociales, etc). El aspecto que tiene esta interface es completamente grafica y lleva como nombre GUI (Graphical User Interface). La GUI de un sistema operativo es un programa informatico que actua como una interface de usuario, usando un conjunto de imagenes y objetos graficos, brindando un entorno visual sencillo para permitir la comunicacion del sistema operativo y el usuario final. (por ejemplo windows tiene el proceso explorer.exe que es el encargado de darle todo el aspecto visual a sistema operativo, si buscamos diferentes entornos graficos para linux encontramos de todas las formas y sabores).
 </p>
 
 <p align="center">
-Ejemplo de GUI Windows
-<img src="imagenes/GUI_WINDOWS.png">
+Ejemplos de GUI
 </p>
 <p align="center">
-Ejemplo de gestor de ventanas en linux
-<img src="imagenes/gui_linux.jpg">
+<img src="imagenes/GUI_WINDOWS.png" width="500">
+<img src="imagenes/gui_linux.jpg" width="500">
 </p>
+
 
 <p align="center">
 Arquitectura de la parte grafica de un sistema operativo
 <img src="imagenes/GUI_arch.png">
 </p>
 
-##### **Administradores =** Interface de administracion
+##### **Administradores =** Interface de administracion (CLI)
 
 <p align="justify">
-Los administradores del sistema operativo, son aquellos usuarios que tienen conocimiento tecnico de la configuracion y administracion del sistema y se necesita expandir mas la interface con la que interactuan, ya que deben acceder a los servicios del sistema. La interface de administracion se extiende a un lenguaje sencillo para dar instrucciones al sistema operativo por medio de comandos llamada CLI (**Console Line Interface**). Esta extension se llama shell, es una interprete de comandos del sistema que provee una interface administrativa para acceder a los servicios del sistema operativo. La mayoria de instrucciones que interpreta o se ejecutan dentro de la shell son programas ubicados dentro de ciertas carpetas del sistema (ejem: Windows -> C:/Windows/System32 o Linux -> /usr/bin ), Estos programas estan hechos especialmente para ser ejecutados via la linea de comandos.
+Los administradores del sistema operativo, son aquellos usuarios que tienen conocimiento tecnico de la configuracion y administracion del sistema y se necesita expandir mas la interface con la que interactuan, ya que deben acceder a los servicios del sistema. La interface de administracion se extiende a un lenguaje sencillo para dar instrucciones al sistema operativo por medio de comandos llamada CLI (Console Line Interface). Esta extension se llama shell, es una interprete de comandos del sistema que provee una interface administrativa para acceder a los servicios del sistema operativo. La mayoria de instrucciones que interpreta o se ejecutan dentro de la shell son programas ubicados dentro de ciertas carpetas del sistema (ejem: Windows -> C:/Windows/System32 o Linux -> /usr/bin ), Estos programas estan hechos especialmente para ser ejecutados via la linea de comandos.
 </p>
 
 <p align="center">
-Linea de comandos Linux
-<img src="imagenes/cli_linux.jpg">
-</p>
-
-<p align="center">
-Linea de comandos windows
-<img src="imagenes/CLI_WINDOWS.png">
+<img src="imagenes/cli_linux.jpg" width="500">
+<img src="imagenes/CLI_WINDOWS.png" width="500">
 </p>
 
 ##### **Desarrolladores =** Interface de programacion (API)
