@@ -71,6 +71,120 @@ Acontinuacion veremos dos ejemplos de como consultar los programas que se estan 
 
 ##### **Desarrolladores =** Interface de programacion (API)
 
+<p align="justify">
+El sistema operativo ofrece a los desarrolladores y a los procesos, un conjunto de servicios publicos, accesible mediante el API.
+
+</p>
+<p align="center">
+<img src="imagenes/Linux API.svg">
+</p>
+
+Ejemplo http://man7.org/linux/man-pages/man3/fchmod.3p.html
+
+```
+PROLOG         
+
+       This manual page is part of the POSIX Programmer's Manual.  The Linux
+       implementation of this interface may differ (consult the
+       corresponding Linux manual page for details of Linux behavior), or
+       the interface may not be implemented on Linux.
+
+NAME        
+
+       fchmod — change mode of a file
+
+SYNOPSIS         
+
+       #include <sys/stat.h>
+
+       int fchmod(int fildes, mode_t mode);
+
+DESCRIPTION         
+
+       The fchmod() function shall be equivalent to chmod() except that the
+       file whose permissions are changed is specified by the file
+       descriptor fildes.
+
+       If fildes references a shared memory object, the fchmod() function
+       need only affect the S_IRUSR, S_IWUSR, S_IRGRP, S_IWGRP, S_IROTH, and
+       S_IWOTH file permission bits.
+
+       If fildes references a typed memory object, the behavior of fchmod()
+       is unspecified.
+
+       If fildes refers to a socket, the behavior of fchmod() is
+       unspecified.
+
+       If fildes refers to a STREAM (which is fattach()-ed into the file
+       system name space) the call returns successfully, doing nothing.
+
+RETURN VALUE         
+
+       Upon successful completion, fchmod() shall return 0. Otherwise, it
+       shall return −1 and set errno to indicate the error.
+
+ERRORS         
+
+       The fchmod() function shall fail if:
+
+       EBADF  The fildes argument is not an open file descriptor.
+
+       EPERM  The effective user ID does not match the owner of the file and
+              the process does not have appropriate privileges.
+
+       EROFS  The file referred to by fildes resides on a read-only file
+              system.
+
+       The fchmod() function may fail if:
+
+       EINTR  The fchmod() function was interrupted by a signal.
+
+       EINVAL The value of the mode argument is invalid.
+
+       EINVAL The fildes argument refers to a pipe and the implementation
+              disallows execution of fchmod() on a pipe.
+
+       The following sections are informative.
+
+EXAMPLES         
+
+   Changing the Current Permissions for a File
+       The following example shows how to change the permissions for a file
+       named /home/cnd/mod1 so that the owner and group have
+       read/write/execute permissions, but the world only has read/write
+       permissions.
+
+           #include <sys/stat.h>
+           #include <fcntl.h>
+
+           mode_t mode;
+           int    fildes;
+           ...
+           fildes = open("/home/cnd/mod1", O_RDWR);
+           fchmod(fildes, S_IRWXU | S_IRWXG | S_IROTH | S_IWOTH);
+
+APPLICATION USAGE        
+
+       None.
+
+RATIONALE         
+
+       None.
+
+FUTURE DIRECTIONS         
+
+       None.
+
+SEE ALSO         
+
+       chmod(3p), chown(3p), creat(3p), fcntl(3p), fstatat(3p),
+       fstatvfs(3p), mknod(3p), open(3p), read(3p), write(3p)
+
+       The Base Definitions volume of POSIX.1‐2008, sys_stat.h(0p)
+
+```
+
 ### 2. Sistema operativo como interface del hardware
 
+Antes de ..
 Nos permite "gobernar" el hardware de manera eficiente y nos ayuda concediendo recursos de hardware de forma segura.
