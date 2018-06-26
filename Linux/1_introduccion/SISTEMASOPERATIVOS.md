@@ -183,17 +183,71 @@ SEE ALSO
        The Base Definitions volume of POSIX.1‐2008, sys_stat.h(0p)
 
 ```
-
 <p align="justify">
-Otra vision a nivel general que podemos tener es visualizando las funciones netas del kernel. Uno de los objetivos principales de este semillero de investigacion es comprender y programar dando uso de estas funciones.
+Otra vision a nivel general que podemos tener es visualizando las funciones netas del kernel y el syscall que hace el kernel para ciertas operaciones. Uno de los objetivos principales de este semillero de investigacion es comprender y programar dando uso de estas funciones.
+</p>
+
+<p align="center">
+<img src="imagenes/kernel.svg">
 </p>
 
 <p align="center">
 <img src="imagenes/kernel2.png">
-
+</p>
 ### 2. Sistema operativo como administrador de recursos
 
 Antes de hablar del sistema operativo como administrador de recursos debemos dar una pequeñas definiciones sobre procesos y recursos.
 
-**Proceso = **
-Nos permite "gobernar" el hardware de manera eficiente y nos ayuda concediendo recursos de hardware de forma segura.
+**Proceso**
+<p aling="justify">
+Una unidad de actividad que se caracteriza por la ejecución de una secuencia de instrucciones, un estado actual, y un conjunto de recursos del sistema asociados. Cada uno de estos procesos tienen instrucciones a ejecutarse, memoria donde ejecutarse, recursos fisicos que accederan para hacer ciertas acciones, un estado de ejecucion y otra informacion que permite al sistema operativo realizar ciertas acciones.
+</p>
+
+**Recurso**
+<p aling="justify">
+Espacios fisicos o virtuales que necesita un proceso para ejecutarse, puede verse como la memoria que ocupa un proceso para poder ejecutarse, tambien puede verse como el hardware que el proceso en llegado caso utilizara para realizar cierta accion.
+</p>
+
+<p aling="justify">
+Sabiendo esto, los recursos de un computador son excasos, y los procesos compiten por ellos, el sistema operativo tomara el papel de "arbitro" o de "mediador" asignando recursos y el tiempo de uso de estos recursos de manera justa y eficiente. El sistema operativo deteremina a quien se le asignan recursos, que cantidad, en que momento y por cuanto tiempo (Gracias a las politicas de gestion de recursos).
+</p>
+
+<p aling="justify">
+Algunos de los criterios que deben cumplir las politicas de gestion de recusos del sistema operativo es optimizar el rendimiento del sistema, evitar acaparamientos e inanicion de los procesos. A su vez no se puede dar el maximo rendimiento y al mismo tiempo dar un reparto justo ya que los recursos no son ilimitados.
+</p>
+
+<p aling="justify">
+El sistema operativo debe garantizar la seguridad del sistema,
+teniendo en cuenta estos tres temas
+</p>
+**Confiabilidad** (intimidad, privacidad), **Integridad** (que la informacion no se corrompa) y **disponibilidad** (Que el sistema siga prestado el servicio).
+
+## Logros del sistema operativo
+
+1. Interface uniforme con la I/O
+2. Multiprogramacion
+3. Paginado de memoria
+4. Memoria virtual
+5. Sistema de archivos
+6. Control de acceso concurrente
+7. Proteccion y seguridad
+
+## Entornos de computacion
+
+1. Ordenadores personales
+2. Dispositivos de mano
+3. Sistemas embebidos
+4. Servidores + multiprocesadores
+5. Cluster de servidores
+6. Supercomputadoras
+7. Sistemas distribuidos
+8. Sistemas virtualizados
+9. Sistemas en la nube
+
+## Tipos de sistemas
+
+1. Procesamiento por lotes
+2. Tiempo compartido
+3. Tiempo real
+4. Sistemas multiusuario
+5. Maquinas virtuales

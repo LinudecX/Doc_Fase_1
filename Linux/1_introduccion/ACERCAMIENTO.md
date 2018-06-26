@@ -6,7 +6,7 @@
 
 <p align="justify">El software libre es una propuesta para los usuarios de la informatica que brinda las libertades justas y necesarias poder usar un sistema o software viendo realmente que pasa con su informacion y al tanto de todo el proceso informatico realizado por el software.</p>
 
-> El software es cada vez mas el gran intermediario entre la informacion y la inteligencia humana. De la misma manera que nos preocupa la libertad para poder acceder a la informacion y, si existe censura, nos debemos preocupar con igual intensidad quien controla este intermediario y que garantias tenemos de su transparencia y fiabilidad. Es por eso que el software tiene un papel muy destacado en la sociedad y es importante garantizar metodos transparentes en sus diferentes fases de produccion y explotacion. El software libre, al dar acceso al codigo es el unico que puede garantizar esta transparencia. 
+> El software es cada vez mas el gran intermediario entre la informacion y la inteligencia humana. De la misma manera que nos preocupa la libertad para poder acceder a la informacion y, si existe censura, nos debemos preocupar con igual intensidad quien controla este intermediario y que garantias tenemos de su transparencia y fiabilidad. Es por eso que el software tiene un papel muy destacado en la sociedad y es importante garantizar metodos transparentes en sus diferentes fases de produccion y explotacion. El software libre, al dar acceso al codigo es el unico que puede garantizar esta transparencia.
 
 <p align="justify">
 Este movimiento social tiene como finalidad despertar la libertad del usuario, que el usuario sea consciente de que tiene derechos inherentes al momento de usar un sistema operativo o un software, a pesar que de que las grandes compañias de software y de sistemas operativos los omitan y vulneren estos derechos de los usuarios. Se debe acotar que Software Gratuito != Software Libre, existe la gran confusion que el software libre es software gratuito, Un software gratuito es un software que es llamado FreeWare el cual puede ser de libre uso pero por no podria dar el codigo fuente. o la redestribucion de este. Para poder saber si un software podria considerarse software libre debe cumplir con las libertades del usuario, que se nombraran mas adelante.</p>
@@ -75,7 +75,7 @@ De las distribuciones libres podemos consultar en https://www.gnu.org/distros/fr
     * Gran apoyo tecnico por parte de la comunidad del software libre
 
 2. **Desventaja**
-    * Al rozar un poco la tendencia radical de solo usar software libre estariamos (o no) limitando el uso de nuestra maquina al no usar software privativo 
+    * Al rozar un poco la tendencia radical de solo usar software libre estariamos (o no) limitando el uso de nuestra maquina al no usar software privativo
     * Todas las desventajas son superables teniendo en cuenta que esta en juego nuestra libertad
 
 
@@ -90,7 +90,7 @@ De las distribuciones libres podemos consultar en https://www.gnu.org/distros/fr
 ***Opinion personal (@s0d0m4) :***
 
 <p align="center" >
-    <img src="imagenes/reversing.jpg" width="400"> 
+    <img src="imagenes/reversing.jpg" width="400">
 </p>
 
 <p align="justify">
@@ -125,7 +125,7 @@ En la vida profesional el tener conocimientos del sistema operativo linux y toda
 Un usuario final, utilizaria Gnu/Linux con la tranquilidad de su privacidad y la veracidad de tener un sistema operativo que funciona y funciona bien. Uno de los aspectos que hay que hacerle zoom es la privacidad del usuario final, que personas externas no tomen su informacion y la vendan o se las den a los gobiernos.
 </p>
 
-**Opinion personal :** <p align="justify">Estamos en la era de la informacion, donde la informacion recorre el mundo en cuestion de segundos, es una gran era, pero asi mismo tiene un doble filo, ya que las grandes empresas y gobiernos quieren tener acceso a nuestra informacion para poder tener control sobre las personas. No es paranoia (https://www.nytimes.com/es/tag/edward-snowden/), Esta en manos de nosotros defender nuestra privacidad y nuestra informacion. 
+**Opinion personal :** <p align="justify">Estamos en la era de la informacion, donde la informacion recorre el mundo en cuestion de segundos, es una gran era, pero asi mismo tiene un doble filo, ya que las grandes empresas y gobiernos quieren tener acceso a nuestra informacion para poder tener control sobre las personas. No es paranoia (https://www.nytimes.com/es/tag/edward-snowden/), Esta en manos de nosotros defender nuestra privacidad y nuestra informacion.
 </p>
 
 ## Instalacion de xubuntu(First Time Dude?)
@@ -178,7 +178,7 @@ Normalmente las distribuciones al cargar el sistema(ya sea instalado o en livecd
 <img src="imagenes/install_1.jpg">
 </p>
 
-Despues de realizar la carga del sistema, aparece dos opciones, si quieremos montar el sistema como LIVECD o proceder a la instalacion, tambien nos mostrara que idioma podremos usar. 
+Despues de realizar la carga del sistema, aparece dos opciones, si quieremos montar el sistema como LIVECD o proceder a la instalacion, tambien nos mostrara que idioma podremos usar.
 
 <p align ="center">
 <img src="imagenes/install_2.jpg">
@@ -291,7 +291,7 @@ Otro comando es el comando cd, si yo quiero entrar a una de las carpetas que aca
 Uno de los comandos basicos de administracion de red, es el comando 'ifconfig', el comando ifconfig es un programa base del sistema, el cual podemos usar para consultar las interfaces de red que tiene mi equipo (por ejemplo wlan y la ethernet). vamos a realizar 3 cosas con este programa. 1) consulta de las interfaces de red que poseemos, 2) deshabilitar una de nuestras interfaces de red y 3) volver a habilitar nuestra interface que anteriormente dehabilitamos.
 </p>
 
-```bash 
+```bash
 ifconfig                            # consultar cuales son nuestras tarjetas de red
 ```
 
@@ -301,7 +301,7 @@ ifconfig                            # consultar cuales son nuestras tarjetas de 
 
 <p align="justify">
 Como podemos ver, al ejecutar nuestro comando de consulta podemos visualizar las interfaces de red que tenemos trabajando, la cual poseemos la **enp0s3** que seria equivalente a nuestro tarjeta de red ethernet, la otra interface local o **lo** la interface local es un mecanismo de red usado para referirse a si mismo (este computador) muy usado para testear software en fase de desarrollo, por eso cuando instalamos xampp podemos testear nuestro server web con http://localhost/. Tambien
-como podemos visualizar podemos encontra nuestro numero ip asigando en cada una de las interfaces(ethernet:10.0.2.15 y localhost:127.0.0.1) 
+como podemos visualizar podemos encontra nuestro numero ip asigando en cada una de las interfaces(ethernet:10.0.2.15 y localhost:127.0.0.1)
 </p>
 
 ```bash
@@ -338,6 +338,13 @@ man man
 
 <p align="justify">
 Normalmente los programas que se instalan en linux vienen con su propia documentacion, para poder usar con mucho mas poder cada una de estas herramientas y poder saber como ejecutarlas y de que forma pasarle argumentos para habilitar otras funcionabilidades internas del programa.
+</p>
+
+## Distribuciones Linux
+
+Gamas y sabores de sistemas operativos Gnu/linux
+<p align="center">
+<img src="imagenes/timeline.png">
 </p>
 
 ## Referencias
