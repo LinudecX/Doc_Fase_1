@@ -72,14 +72,14 @@ Acontinuacion veremos dos ejemplos de como consultar los programas que se estan 
 ##### **Desarrolladores =** Interface de programacion (API)
 
 <p align="justify">
-El sistema operativo ofrece a los desarrolladores y a los procesos, un conjunto de servicios publicos, accesible mediante el API.
+El sistema operativo ofrece a los desarrolladores y a los procesos, un conjunto de servicios publicos, accesible mediante el API. Como podemos ver en la siguente grafica, por medio de la libreria de GNU C, podremos conseguir esta interface programable, la cual nos permitira tener control sobre procesos, administracion de memoria, sockets, y acceso a los drivers del sistema operativo.
 
 </p>
 <p align="center">
 <img src="imagenes/Linux API.svg">
 </p>
 
-Ejemplo http://man7.org/linux/man-pages/man3/fchmod.3p.html
+Ejemplo, funcion fchmod, funciona igual chmod en linux, informacion sacada de -> http://man7.org/linux/man-pages/man3/fchmod.3p.html
 
 ```
 PROLOG         
@@ -184,7 +184,16 @@ SEE ALSO
 
 ```
 
-### 2. Sistema operativo como interface del hardware
+<p align="justify">
+Otra vision a nivel general que podemos tener es visualizando las funciones netas del kernel. Uno de los objetivos principales de este semillero de investigacion es comprender y programar dando uso de estas funciones.
+</p>
 
-Antes de ..
+<p align="center">
+<img src="imagenes/kernel2.png">
+
+### 2. Sistema operativo como administrador de recursos
+
+Antes de hablar del sistema operativo como administrador de recursos debemos dar una pequeñas definiciones sobre procesos y recursos.
+
+**Proceso = **
 Nos permite "gobernar" el hardware de manera eficiente y nos ayuda concediendo recursos de hardware de forma segura.
