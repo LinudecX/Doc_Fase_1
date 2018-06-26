@@ -194,6 +194,7 @@ Otra vision a nivel general que podemos tener es visualizando las funciones neta
 <p align="center">
 <img src="imagenes/kernel2.png">
 </p>
+
 ### 2. Sistema operativo como administrador de recursos
 
 Antes de hablar del sistema operativo como administrador de recursos debemos dar una pequeñas definiciones sobre procesos y recursos.
