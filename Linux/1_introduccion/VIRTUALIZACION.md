@@ -28,7 +28,7 @@ Al poder tener diferentes instancias en un mismo recurso fisico, podremos config
 </p>
 
 <p align="center">
-<img src="imagenes/virtualizacion/hypervisor.png">
+<img src="imagenes/virtualizacion/hypervisor.png"><br>
 *https://developer.arm.com/products/architecture/a-profile/docs/100942/latest/aarch64-virtualization*
 </p>
 
