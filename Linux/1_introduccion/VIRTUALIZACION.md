@@ -66,6 +66,7 @@ Mas informacion: https://en.wikipedia.org/wiki/Comparison_of_platform_virtualiza
 </p>
 
 ## Raspbian
+
 <p align="center">
 <img src="imagenes/virtualizacion/raspbian.jpg" width="250">
 </p>
