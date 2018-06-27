@@ -26,8 +26,8 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
         * [Instalacion de xubuntu](Linux/1_introduccion/ACERCAMIENTO.md#instalacion-de-xubuntufirst-time-dude)
         * [Referencias](Linux/1_introduccion/ACERCAMIENTO.md#referencias)
     * [Sistemas Operativos - Teoria](Linux/1_introduccion/SISTEMASOPERATIVOS.md)
-    * Virtualizacion
-    * Nociones para el uso de la terminal
+    * [Nociones para el uso de la terminal](Linux/1_introduccion/COMANDOS.md)
+    * [Virtualizacion](Linux/1_introduccion/VIRTUALIZACION.md)
 2. Arquitectura del sistema
 3. Instalacion de sistema y administracion de paquetes
 4. Commandos
