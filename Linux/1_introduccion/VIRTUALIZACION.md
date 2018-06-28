@@ -65,6 +65,66 @@ Mas informacion: https://en.wikipedia.org/wiki/Comparison_of_platform_virtualiza
 <img src="imagenes/virtualizacion/qemu.jpg" width="400">
 </p>
 
+<p align="justify">
+Qemu es un virtualizacion y en emulador de codigo abierto. Cuando se usa como emulador de maquina, Qemu puede ejecutar sistemas operativos y programas creados para una arquitectura especifica (por ejemplo para sistemas de arquitectura de ARM), Qemu usa traduccion dinamica de arquitectura y logra un buen rendimiento.
+</p>
+
+<p align="justify">
+Cuano Qemu se usa como virtualizador, Qemu logra un rendimiento casi nativo al ejecutar codigo de invitado directamente en la CPU fisica. Qemu admite la virtualizacion cuando se ejecuta bajo el hipervisor Xen o utilizando el modulo de kernel KVM en linux. Al usar KVM Qemu puede virtualizar diferentes arquitecturas (MIPS, ARM de 32 y 64, POWERPC de 64, procesadores de la familia X86 y otros).
+</p>
+
+### Instalacion
+
+```bash
+sudo apt-get install qemu
+```
+Para verificar su instalacion ejecutamos:
+
+```bash
+ls /usr/bin/qem*
+```
+
+<p align="justify">
+y obtendremos algo como esto, estamos listando todos los ficheros que nos permitiran realizar una emulacion de diferentes arquitecturas.
+</p>
+
+<p align="center">
+<img src="imagenes/virtualizacion/bin_files.jpg">
+</p>
+
+<p align="justify">
+Para empezar con el uso de de Qemu, miraremos dos formas de almacenar nuestros sistemas emulados, tenemos el formato .img el cual nos permite tener nuestro sistema dentro de este archivo (como si tuvieramos un disco duro alli) o en el formato qcow2 que tambien nos permite almacenar nuestro sistema dentro de este archivo. una de las diferencias de estos dos formatos, es que si por ejemplo nosotros definimos que nuestro sistema va a tener 20 gb de almacenamiento interno, en el formato .img se creara un archivo de 20gb, en cambio si creamos un archivo .qcow2 para almacenar 20gb nuestro archivo solo pesara lo que se este usando en ese momento y no ocupa todo el espacio que hemos definido.
+</p>
+
+para crear una imagen de disco de estos ficheros usaremos una herramienta de qemu. Tendremos que ejecutar:
+
+```bash
+qemu-img create nuestrosistema.img 20G
+```
+
+```bash
+qemu-img create -f qcow2 nuestrosistema.qcow 20G
+```
+<p align="justify">
+Un ejemplo practico seria algo asi. primeramente creamos los dos discos con sus formatos. luego con el comando file verificamos que tipo de archivo es, y luego verificamos el tamaño de los dos archivos y vemos que uno corresponde a 2g y el otro solo tiene 193k.
+</p>
+
+<p align="center">
+<img src="imagenes/virtualizacion/creacion_disk.jpg">
+</p>
+
+Para iniciar nuestro sistema ejecutamos qemu(dependiendo de la arquitectura que vayamos a usar), luego le pasamos el argumento -hda donde el siguente argumento sera el fichero (ya sea con path relativo o absoluto) donde se encuentra nuestro disco que creamos, el siguente argumento seria el -boot que le pasamos la letra b para definirle que se inicio booteando el archivo iso que le definimos, Luego viene el -cdrom donde definiremos la iso para instalar nuestro sistema y por ultimo el parametro -m donde definiremos la memoria ram que tendra nuestra maquina.
+
+```
+qemu -hda nuestrosistema.img -boot d -cdrom ./sistemaoperativo_i386.iso -m 1G
+```
+
+Despues de iniciar nuestra maquina y instalar el sistema, podremos volver a iniciar esta maquina virtual con el siguente comando
+
+```
+qemu -m 1G -hda nuestrosistema.img
+```
+
 ## Raspbian
 
 <p align="center">
