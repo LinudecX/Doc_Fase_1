@@ -127,5 +127,5 @@ qemu -m 1G -hda nuestrosistema.img
 ## Raspbian en Qemu
 
 <p align="center">
-<img src="imagenes/virtualizacion/riscos.jpg" width="200">
+<img src="imagenes/virtualizacion/raspbian.jpg" width="300">
 </p>
