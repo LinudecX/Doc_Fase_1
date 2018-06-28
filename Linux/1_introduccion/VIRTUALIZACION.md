@@ -124,8 +124,66 @@ Despues de iniciar nuestra maquina y instalar el sistema, podremos volver a inic
 ```
 qemu -m 1G -hda nuestrosistema.img
 ```
+
+**Ejercicio :** Emular debian con qemu.
+
 ## Raspbian en Qemu
 
 <p align="center">
 <img src="imagenes/virtualizacion/raspbian.jpg" width="300">
 </p>
+
+<p align="justify">
+En este caso emularemos el sistema operativo por preferencia del raspberry pi, Raspbian es una version de debian para la board de hardware libre Raspberry PI, pero ¿Para que emular una raspberry PI si no tenemos acceso a la GPIO directamente?, Normalmente se hacen las emulaciones y las virtualizaciones para tareas de pruebas especificas, una de las tareas bien interesantes es escribir codigo desde una arquitectura a otra y poder tener la interface con la emulacion o con la virtualizacion y poder debuggear y encontrar errores. Qemu es muy poderoso en esto ya que nos permite debuggear codigo para diferentes arquitecturas sin tener una instancia totalmente virtual de la arquitectura del hardware.
+</p>
+
+<p align="justify">
+Primeramente crearemos una carpeta donde guardaremos los archivos necesarios para realizar la emulacion del sistema operativo raspbian con el siguente comando.
+</p>
+
+```bash
+mkdir raspberry-qemu && cd raspberry-qemu
+```
+
+<p align="justify">
+Luego de esto nos descargaremos dos archivos fundamentales para realizar eso, el primero es el sistema operativo sin interface grafica (No lo hice con el de la GUI por que me daba algunos errores al iniciarla). El segundo archivo es el kernel donde se emulara este sistema operativo, este kernel es la base para que qemu pueda emular algunas funcionabilidades del sistema de manera facil y medianamente rapida.
+</p>
+
+```bash
+wget http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2018-04-19/2018-04-18-raspbian-stretch-lite.zip
+wget https://github.com/dhruvvyas90/qemu-rpi-kernel/raw/master/kernel-qemu-4.4.34-jessie
+```
+*Si sale algun error diciendo que no encuentra instalado wget en el sistema solo debe hacer **sudo apt-get install wget***
+
+<p align="justify">
+Y ejecutaremos el siguente comando, donde le especificamos el kernel que usaremos (en el argumento -kernel), luego con montaremos el sistema de ficheros sobre /dev/sda2 (con el parametro append), despues definiremos la imagen de disco del sistema raspbian (con el parametro -hda), luego definiremos la cpu que usaremos y definiremos la ram que usara el sistema, le definimos que no usaremos la funcion de reboot, y otras configuracion a nivel de red.
+</p>
+
+```bash
+sudo qemu-system-arm \
+-kernel ./kernel-qemu-4.4.34-jessie \
+-append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" \
+-hda 2018-04-18-raspbian-stretch-lite.img \
+-cpu arm1176 -m 256 \
+-M versatilepb \
+-no-reboot \
+-serial stdio \
+-net nic -net user \
+-net tap,ifname=vnet0,script=no,downscript=no
+```
+Algo asi seria el resultado.
+
+<p align="center">
+<img src="imagenes/virtualizacion/rasp_qemu.jpg">
+</p>
+
+<p align="justify">
+qemu es una herramienta muy potente, nos servira saber de la existencia y el uso de la misma para pruebas posteriores.
+</p>
+
+## Referencias
+https://linux.die.net/man/1/qemu-img
+https://opensourceforu.com/2011/05/quick-quide-to-qemu-setup/
+https://wiki.debian.org/QEMU#Installation
+https://azeria-labs.com/emulate-raspberry-pi-with-qemu/
+https://blog.agchapman.com/using-qemu-to-emulate-a-raspberry-pi/
