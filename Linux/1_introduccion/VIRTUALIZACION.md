@@ -66,7 +66,7 @@ Mas informacion: https://en.wikipedia.org/wiki/Comparison_of_platform_virtualiza
 </p>
 
 <p align="justify">
-Qemu es un virtualizacion y en emulador de codigo abierto. Cuando se usa como emulador de maquina, Qemu puede ejecutar sistemas operativos y programas creados para una arquitectura especifica (por ejemplo para sistemas de arquitectura de ARM), Qemu usa traduccion dinamica de arquitectura y logra un buen rendimiento.
+Qemu es un virtualizacion y un emulador de codigo abierto. Cuando se usa como emulador de maquina, Qemu puede ejecutar sistemas operativos y programas creados para una arquitectura especifica (por ejemplo para sistemas de arquitectura de ARM), Qemu usa traduccion dinamica de arquitectura y logra un buen rendimiento.
 </p>
 
 <p align="justify">
@@ -124,14 +124,7 @@ Despues de iniciar nuestra maquina y instalar el sistema, podremos volver a inic
 ```
 qemu -m 1G -hda nuestrosistema.img
 ```
-
-## Raspbian
-
-<p align="center">
-<img src="imagenes/virtualizacion/raspbian.jpg" width="250">
-</p>
-
-## Risc OS
+## Raspbian en Qemu
 
 <p align="center">
 <img src="imagenes/virtualizacion/riscos.jpg" width="200">
