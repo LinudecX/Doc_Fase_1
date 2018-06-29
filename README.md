@@ -44,3 +44,5 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
     * [Instalar compilador](/Lenguaje_C/CONFIG.md#instalacion-de-compilador-y-herramientas-necesariaslinux)
     * [Codeblocks](/Lenguaje_C/CONFIG.md#codeblocks)
 2. Introduccion
+3. Tipos de datos numericos
+4. Strings y Entrada/Salida con formato
