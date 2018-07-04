@@ -8,8 +8,7 @@ Antes de iniciar nuestra aventura en el mundo de la programacion con el lenguaje
 2. Entendimiento de la computadora
 3. Pasos para escribir un programa en C
 4. Mecanica de desarrollo
-5. Introduccion a C con un ejemplo sencillo
-6. Keywords
+5. Keywords
 
 ## Breve historia y caracteristicas
 
@@ -194,14 +193,109 @@ Proximamente estaremos viendo la version C17.
 
 ## Mecanica de desarrollo
 
+<p align="justify">
+La mecanica de desarrollo de programas en C podriamos separarlos en dos fases, 1) forma de nuestros codigos fuente y 2) Las fases de compilacion de un programa.
+</p>
+
+**1) forma de nuestros codigos fuente**
+
+<p align="justify">
+La forma o la estructura de nuestros programas en esta primera parte seran de la siguente manera. Supongamos que estamos haciendo un programa que recibe 2 numeros y que  tiene 4 funciones (suma resta, comprobar que sea par y realizar una division), sabiendo esto concluimos que debemos usar el numero 2 para poder hacer la validacion si el numero  es par o es impar pero no como variable si no como constante. (Aunque no se entiendan algunas cosas solo fijarse en los comentarios).
+</p>
+
+```c
+/* headers */
+#include <stdio.h>
+
+/* definiciones y variables globales */
+#define   NUMERO  2
+
+/* Prototipo de funciones */
+int suma(int, int);
+int resta(int, int);
+int division(int, int);
+int modulo(int);
+
+/* Funcion principal*/
+int main(void)
+{
+  int numero1, numero2;
+  scanf("%d %d", &numero1, &numero2);
+  printf("Suma     = %d\n",suma(numero1, numero2));
+  printf("Resta    = %d\n",resta(numero1,numero2));
+  printf("Division = %d\n",division(numero1,numero2));
+  printf("Num1 Par = %d\n",modulo(numero1));
+  return 0;
+}
+
+/* Funciones */
+int suma(int a, int b)
+{
+    return a+b;
+}
+
+int resta(int a, int b)
+{
+  return a-b;
+}
+
+int division(int a, int b)
+{
+  return a/b;
+}
+int modulo(int c)
+{
+  return (c%NUMERO == 0) ? 0 : 1;
+}
+
+```
+
+<p align="justify">
+Podemos decir que un programa basico en C consta de 4 a 5 partes, la primera parte son los headers, son las librerias que vamos a traer para poder usar ciertas funciones del lenguaje o del sistema operativo, estos headers traen dentro de si definiciones y macros que se usaran para x o y accion. los headers son de la parte de preprocesado del compilador ( el compilador toma el codigo fuente y como minimo realiza 2 pasadas tratando de entender lo que hemos escrito y en la primera pasada es la parte de preprocesado, son directivas que el desarrollador escribe para el compilador definiendo algunas reglas antes de empezar el proceso de traduccion a lenguaje maquina), las definiciones o variables globales vienen despues, en esta seccion podremos realizar nuestras directivas de preprocesado personalizadas y definir variables que podremos usar en cualquier parte del programa (para usar diferentes archivos se debe usar extern pero lo veremos con calma mas adelante en codigos fuente mas grandes).
+</p>
+
+<p align="justify">
+Despues de esto vienen los prototipos de las funciones de nuestro programa. para poder definir nuestras propias funciones dentro de nuestro programa debemos especificarle al compilador como seran estas funciones entonces es como una descripcion pequeña de nuestra funcion en terminos de sintaxis al compilador, por ejemplo le definimos que vamos a tener una funcion llamada suma que recibe dos datos numericos y retornara o devolvera otro dato numerico.
+</p>
+
+<p align="justify">
+La funcion principal, en C casi todo es una funcion. Esta funcion definira donde inicia nuestro programa. Esta funcion tendra la tarea de especificarle al compilador donde inicia nuestro programa y como sera el flujo general del mismo. Vemos que esta funcion puede recibir algunos datos pero como no vamos a recibir ningun dato al iniciar, le decimos al compilador void y vemos que retorna un valor numerico (int), este valor se usa para brindarle informacion al sistema operativo del estado en el que termina nuestro programa, por convencion le enviamos al sistema operativo 0 diciendole "todo esta bien y termino este programa en orden", si tuvieramos algun error y le queremos decir al sistema operativo aqui hay un error le deberiamos enviar -1.
+</p>
+
+<p align="justify">
+Y por ultimo vienen nuestras funciones, Las funciones son bloques de codigo que realizan una tarea especifica, se puede realizar la anologia con un funcion matematica, debemos enviarle datos (argumentos) y esta funcion retornara un valor que nosotros le definamos despues de realizar ciertos computos. Debemos tener en cuenta que la cantidad de funciones seran igual al numero de prototipos de funciones que hemos definido al principio, respetando el prototipo que definimos(tipo de datos que ingresan y tipo de dato que retorna o devuelve). (todo esto se vera con calma a lo largo de estas sesiones dando teoria bien jugosa y practicas).
+</p>
+
+
+**2) fases de compilacion**
+
+<p align="justify">
+Para poder compilar nuestro codigo fuente dentro de Gnu/linux Usaremos el compilador GNU GCC (Existen otros compiladores por ejemplo mingw LLVM-Clang). Nos posicionamos en el directorio donde tenemos guardado nuestro archivo y ejecutamos por consola:
+</p>
+
+> gcc main.c
+
+Al final de esto obtendremos un a.out de color verde (esto quiere decir con permisos de ejecucion) y podremos ejecutar nuestro programa tecleando `./a.out`. Pero que paso por debajo? Fue auto magicamente?. No, en el siguente grafico podremos ver que fue lo que paso por debajo. vemos que el proceso de compilacion es uno solo pero se separa en dos subprocesos.
+
+<p align="justify">
+1) compilacion: viene la primera pasada del preprocesado donde el compilador lee todas las directivas y realiza las acciones que le definen esas directivas, luego viene la traduccion a codigo maquina. pero las funciones que usaremos donde estan? se cargan automaticamente con solo los includes que definimos en el header?, No, la segunda fase se encarga de esto.
+</p>
+
+<p align="justify">
+2) Linkear librerias, Cuando el compilador linkea las librerias se trae los segmentos de codigo maquina (codigo objeto) y los inserta en un solo archivo que sera nuestra salida, nuestro programa.
+</p>
+
+Viendolo desde un punto de vista un poco mas grafico, serial algo como esto:
+
+<p align="center">
+<img src="imagenes/linker.jpg">
+</p>
+
+o desde diagrama de secuencia:
 
 <p align="center">
 <img src="imagenes/compiler.png">
 </p>
-
-
-## Introduccion a C con un ejemplo sencillo
-
 
 ## Keywords
 
@@ -218,6 +312,9 @@ double    register    unsigned  _static_asert
 else      restrict    void      #_Thread_local
 enum      return      volatile
 ```
+## Laboratorio
+
+Realizar proceso de compilacion y linkeo por consola con un hola mundo sencillo.
 
 # Referencias
 1. https://www.ecured.cu/Historia_del_Lenguaje_C
