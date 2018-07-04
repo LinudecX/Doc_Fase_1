@@ -98,6 +98,10 @@ https://www.youtube.com/watch?v=d9SWNLZvA8g
 </p>
 
 ## Alto nivel y compiladores
+## Pasos para escribir un programa en C
+## Mecanica de desarrollo
+## Introduccion a C con un ejemplo sencillo
+## Keywords
 
 # Referencias
 1. https://www.ecured.cu/Historia_del_Lenguaje_C
