@@ -299,6 +299,10 @@ o desde diagrama de secuencia:
 
 ## Keywords
 
+</p align="justify">
+Este listado de palabras, son las palabras reservadas por el compilador no podremos usar estas palabras fuera del contexto que el lenguaje nos indica. Si por ejemplo le ponemos como nombre una de estas palabras reservadas a una variable el compilador nos dara un error de sintaxis.
+</p>
+
 ```
 auto      extern      short     while
 break     float       signed    _Alignas
