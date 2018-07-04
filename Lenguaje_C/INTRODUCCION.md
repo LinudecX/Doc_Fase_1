@@ -49,7 +49,7 @@ Para poder programar en C, se debe tener un entendimiento de las funciones de la
 
 <p align="center">
 <b>Creacion de un procesador - Intel</b><br>
-[![Creacion de un procesador - Intel](https://img.youtube.com/vi/d9SWNLZvA8g/0.jpg)](https://www.youtube.com/watch?v=d9SWNLZvA8g)
+https://www.youtube.com/watch?v=d9SWNLZvA8g
 </p>
 
 <p align="center">
