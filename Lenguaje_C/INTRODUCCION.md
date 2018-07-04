@@ -5,10 +5,13 @@ Antes de iniciar nuestra aventura en el mundo de la programacion con el lenguaje
 </p>
 
 1. Breve historia y caracteristicas
-2. Pasos para escribir un programa en C
-3. Un poco sobre compiladores y linkers
-4. Estandares de C
-5. Keywords
+2. Entendimiento de la computadora
+3. Pasos para escribir un programa en C
+4. Mecanica de desarrollo
+5. Introduccion a C con un ejemplo sencillo
+6. Keywords
+
+## Breve historia y caracteristicas
 
 <p align="justify">
 C es un lenguaje de programación creado en 1972 por Dennis M. Ritchie en los Laboratorios Bell. Es un lenguaje orientado a la implementación de Sistemas Operativos, concretamente Unix. C es apreciado por la eficiencia del código que produce y es el lenguaje de programación más popular para crear software de sistemas, aunque también se utiliza para crear aplicaciones.  Se trata de un lenguaje débilmente tipificado de medio nivel pero con muchas características de bajo nivel. Dispone de las estructuras típicas de los lenguajes de alto nivel pero, a su vez, dispone de construcciones del lenguaje que permiten un control a muy bajo nivel. Los compiladores suelen ofrecer extensiones al lenguaje que posibilitan mezclar código en ensamblador con código C o acceder directamente a memoria o dispositivos periféricos. se pueden desarrollar compiladores de C fácilmente. En consecuencia, el lenguaje C está disponible en un amplio abanico de plataformas (seguramente más que cualquier otro lenguaje). Además, a pesar de su naturaleza de bajo nivel, el lenguaje se desarrolló para incentivar la programación independiente de la máquina. Un programa escrito cumpliendo los estándares e intentando que sea portátil puede compilarse en muchos computadores.
@@ -114,7 +117,40 @@ La mecanica de programar en Ensablador surgio mucho antes de C y era algo riguro
 </p>
 
 ## Alto nivel y compiladores
+
+<p align="justify">
+Los Lenguajes de alto nivel estan para facilitarle el desarrollo al programador (pero tampoco esperar que todo el lenguaje haga todo por uno). Brindando abstracciones al programador que son mas faciles de usar y que sean un poco mas entendibles para el humano (Los lenguajes de alto nivel normalmente describen de forma abstrata las acciones que hara el procesador). El lenguaje C es considerado de alto nivel y/o medio nivel (ya que abstrae la mecanica de programar en lenguaje ensamblador a una sintaxis un poco mas humana). Aqui entra juego los compiladores, los compiladores son programas que se encargan de tomar el archivo escrito en lenguaje C traducirlo a lenguaje maquina (1010 1010 1010 1110). Mas o menos el proceso es de esta manera (se profundizara mas adelante).
+</p>
+
+<p align="center">
+<img src="imagenes/compiler.png">
+</p>
+
+<p align="justify">
+Cada familia de procesadores maneja un set de instrucciones diferente entonces si realizamos un programa en ensamblador, el programa sera dependiente a la maquina en donde se esta programando. Uno de los objetivos de C al crearse fue poder hacer el lenguaje un poco mas independiente del tipo de procesador donde se estuviera programando. El compilador se encargara de pasarlo a una arquitectura definida (si es posible y si se configura para que asi sea).
+</p>
+
+> Trabajo extra: Averiguar como funciona JVM , ART , CLR otros RunTime Machines.  
+
+<p align="center">
+<img src="imagenes/vm.png">
+</p>
 ## Pasos para escribir un programa en C
+
+1. Definir los objetivos del programa
+
+2. Diseñar el programa
+
+3. Escribir codigo
+
+4. Compilar
+
+5. Ejecutar el programa
+
+6. Realizar pruebas, Debuggear el programa
+
+7. Mantener y modificar el programa
+
 ## Mecanica de desarrollo
 ## Introduccion a C con un ejemplo sencillo
 ## Keywords
@@ -127,3 +163,4 @@ La mecanica de programar en Ensablador surgio mucho antes de C y era algo riguro
 5. https://wikimedia.org
 6. https://blog.dell.com/en-us/laptop-hard-drive-failure-prevention-101/
 7. http://www.c-jump.com/CIS60/lecture01_2.htm
+8. https://stackoverflow.com/questions/11253303/how-does-the-java-runtime-environment-compare-with-the-net-framework-in-terms-o
