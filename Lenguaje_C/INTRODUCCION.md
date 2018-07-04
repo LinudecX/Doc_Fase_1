@@ -97,6 +97,22 @@ https://www.youtube.com/watch?v=d9SWNLZvA8g
 <img src="imagenes/board.jpg" height="500">
 </p>
 
+<p align="justify">
+Haciendo un poco de enfasis en el procesador podemos concluir que es muy simple en realidad, el procesador toma una instruccion desde la memoria, entiende la instruccion y realiza una accion (acciones predefinidas en las instrucciones del procesador) y repite el proceso, pero esto lo hace a una gran velocidad (la unidad de medida sobre las computadoras son la cantidad de veces que puede ejecutar instrucciones en un tiempo dado, <b>Hertz</b>, Los Hertz en los computadores representa la cantidad de instrucciones procesadas en 1 segundo. Cuando nos referimos a un procesador de 2.6 GigaHertz (x10^9) queremos decir que ese procesador ejecuta <b>2.600.000.000</b> instrucciones por segundo).
+</p>
+
+<p align="justify">
+Los procesadores contienen unos espacios donde se puede almacenar cierto informacion del estado del procesador. Estos espacios son llamados <b>registros</b>, estos espacios solo pueden un numero. Por ejemplo uno de estos registros y que tiene una funcion muy importante es el EIP (Extended Instruction Pointer), este registro guardara la posicion de memoria donde esta ubicado la parte del programa que esta ejecutando el procesador. Existen muchos registros mas y dependiendo de la familia del procesador pueden cambiar un poco. Nosotros podremos hablar directamente con el procesador por medio del lenguaje ensamblador y darle instrucciones muy especificas para que realizan una accion sobre un conjunto de bytes.
+</p>
+
+<p align="center">
+<img src="imagenes/EIP.jpg">
+</p>
+
+<p align="justify">
+La mecanica de programar en Ensablador surgio mucho antes de C y era algo riguroso programar en ensablador muy al estilo de mover valores a registros, realizar comparaciones y saltos de codigo por todo el programa. Programar en ensamblador tiene sus ventajas y su desventajas ya que se debe ser muy especifico con los valores que se esta trabajando y la forma de trabajarlos (muy manual). Pero por otro lado surgio C un lenguaje de alto nivel pero sin perder el poder de manipular los recursos del computador he inclusive mezclar codigo ensamblador con C para ganar velocidad y optimizacion.
+</p>
+
 ## Alto nivel y compiladores
 ## Pasos para escribir un programa en C
 ## Mecanica de desarrollo
@@ -110,3 +126,4 @@ https://www.youtube.com/watch?v=d9SWNLZvA8g
 4. https://www.quora.com/What-are-the-best-open-source-CPUs
 5. https://wikimedia.org
 6. https://blog.dell.com/en-us/laptop-hard-drive-failure-prevention-101/
+7. http://www.c-jump.com/CIS60/lecture01_2.htm
