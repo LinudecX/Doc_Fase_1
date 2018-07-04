@@ -119,7 +119,7 @@ La mecanica de programar en Ensablador surgio mucho antes de C y era algo riguro
 ## Alto nivel y compiladores
 
 <p align="justify">
-Los Lenguajes de alto nivel estan para facilitarle el desarrollo al programador (pero tampoco esperar que todo el lenguaje haga todo por uno). Brindando abstracciones al programador que son mas faciles de usar y que sean un poco mas entendibles para el humano (Los lenguajes de alto nivel normalmente describen de forma abstrata las acciones que hara el procesador). El lenguaje C es considerado de alto nivel y/o medio nivel (ya que abstrae la mecanica de programar en lenguaje ensamblador a una sintaxis un poco mas humana). Aqui entra juego los compiladores, los compiladores son programas que se encargan de tomar el archivo escrito en lenguaje C traducirlo a lenguaje maquina (1010 1010 1010 1110). Mas o menos el proceso es de esta manera (se profundizara mas adelante).
+Los Lenguajes de alto nivel estan para facilitarle el desarrollo al programador (pero tampoco esperar que todo el lenguaje haga todo por uno). Brindando abstracciones al programador que son mas faciles de usar y que sean un poco mas entendibles para el humano (Los lenguajes de alto nivel normalmente describen de forma abstrata las acciones que hara el procesador). El lenguaje C es considerado de alto nivel y/o medio nivel (ya que abstrae la mecanica de programar en lenguaje ensamblador a una sintaxis un poco mas humana). Aqui entra juego los compiladores, los compiladores son programas que se encargan de tomar el archivo escrito en lenguaje C traducirlo a lenguaje maquina (1010 1010 1010 1110). Mas o menos el proceso es de esta manera.
 </p>
 
 <p align="center">
@@ -130,27 +130,71 @@ Los Lenguajes de alto nivel estan para facilitarle el desarrollo al programador 
 Cada familia de procesadores maneja un set de instrucciones diferente entonces si realizamos un programa en ensamblador, el programa sera dependiente a la maquina en donde se esta programando. Uno de los objetivos de C al crearse fue poder hacer el lenguaje un poco mas independiente del tipo de procesador donde se estuviera programando. El compilador se encargara de pasarlo a una arquitectura definida (si es posible y si se configura para que asi sea).
 </p>
 
-> Trabajo extra: Averiguar como funciona JVM , ART , CLR otros RunTime Machines.  
+> Trabajo extra: Averiguar como funciona JVM , ART , CLR otros RunTime Machines y que diferencias se encuentran con la forma de compilacion de C.  
 
 <p align="center">
-<img src="imagenes/vm.png">
+<img src="imagenes/vm.png" height="300">
 </p>
+
+<p align="justify">
+El lenguaje C ha estado en evolucion y tuvo la necesidad de ser definido un estandar del lenguaje, para poder unificar el trabajo de los vendedores y de las personas que realizaban compiladores para C. Estos estandares definidos por han traido nuevas caracteristicas al lenguaje y una mayor portabilidad. Se debe tener en cuenta estos estanadares a la hora de desarrollador en C, por que puede que exista la posibilidad que al intentar usar una caracteristica nueva de C aparezca un error de uso por el estandar que se esta trabajando:
+</p>
+
+<p align="justify">
+<b>ANSI C || ISO-C || c90 || c89 : </b> Definido por American National Standards Institute, este instituto fue el primero en establecer este estandar, la institucion mantuvo el espiritu libre de C y contribuyo a reforzarlo en algunos aspectos.
+<ld>
+<li>Confianza en el programador </li>
+<li>Mantener el lenguaje pequeño y simple </li>
+<li>Prover un unico modo para hacer una operacion</li>
+<li>Hacerlo rapido, inclusive si no se garantiza la portabilidad</li>
+<li>No prevenir al programador de que necesita para terminar el programa </li>
+</ld><br>
+
+<b>c99 : </b> Se mantuvieron la mayoria de los aspectos definidos por el primer estandar y realizaron algunas mejoras.<br><br>
+<ld>
+<li>Soporte internacion de desarollo (Unicode)</li>
+<li>Funciones para ciencias computacionales </li>
+<li>Soporte para procesadores de 64 bits</li>
+<li>Posibilidad de altenar la compatibilidad de los estandares anteriores</li>
+</ld><br>
+
+<b>c11 : </b> Se agregaron las siguentes mejoras.<br><br>
+<ld>
+<li>Mas seguridad</li>
+<li>Procesadores de direntes arquitecturas</li>
+<li>Soporte a tareas de concurrencia</li>
+<li>Se elimina la funcion gets</li>
+<li>Mas macros numericas</li>
+</ld><br>
+</p>
+
+Mas informacion http://www.iso-9899.info/wiki/The_Standard
+
+Proximamente estaremos viendo la version C17.
 
 ## Pasos para escribir un programa en C
 
-1. Definir los objetivos del programa
+1. Definir los objetivos del programa : En esta parte de debe poner la idea clara sobre la mesa sobre la finalidad del programa. Se debe pensar en que informacion necesita para cumplir el objetivo. Definir los calculos que hara. La forma que presentara los resultados, pero no en terminos computacionales si no en terminos logicos.
 
-2. Diseñar el programa
+2. Diseñar el programa : Se debe definir los aspectos tecnicos del programa. Pensar en como estara organizado. Cual sera la arquitectura de las maquinas donde sera usado. Formas de representacion de la informacion.
 
-3. Escribir codigo
+3. Escribir codigo : Implementar la idea en el lenguaje, Cambios en las herramientas de uso (por ejemplo si programamos para una arquitectura diferente, tener cuidado que tipo de variables usamos). DOCUMENTAR EL TRABAJO (en el mismo codigo y en otros formatos).
 
-4. Compilar
+4. Compilar : Realizar la traduccion del codigo a lenguaje maquina por medio del compilador. Si se aprende cuales son las tareas que realiza el compilador es un skill que se ira aumentando de acuerdo como compilemos programas. Verificacion de warnings y errores.
 
-5. Ejecutar el programa
+5. Ejecutar el programa : Cargar nuestro programa al sistema y verificar que la ejecucion va en orden, podremos realizar esta ejecucion por medio de nuestro IDE o por la linea de comandos o desde el entorno grafico.
 
-6. Realizar pruebas, Debuggear el programa
+6. Realizar pruebas, Depurar el programa : Esta parte es una de las mas importantes del desarrollo de un programa en C, Depurar o Debugging es el proceso para encontrar errores logicos en nuestros programas. Existen muchas herramientas para esto pero la principal en la mayoria de los casos sobre todo para sistemas Gnu/linux y otros se usa **GDB**. Con GDB podemos ver muy de cerca el comportamiento de nuestro programa sobre la maquina.
 
-7. Mantener y modificar el programa
+<p align="center">
+<img src="imagenes/gdb.png" height="800">
+</p>
+
+7. Mantener y modificar el programa : Despues de crear nuestra primera version de un programa, debemos mantener nuestro trabajo y estar en constante evolucion y sin perder nuestro trabajo realizado. Git es un control de version que se puede usar en local o en remoto para mantener organizado las versiones de nuestros proyectos y para el trabajo colectivo. Si en algun momento cometemos un error con git podremos "devolver el tiempo" y volver a una version que sea estable.
+
+<p align="center">
+<img src="imagenes/git.png">
+</p>
 
 ## Mecanica de desarrollo
 ## Introduccion a C con un ejemplo sencillo
@@ -165,3 +209,4 @@ Cada familia de procesadores maneja un set de instrucciones diferente entonces s
 6. https://blog.dell.com/en-us/laptop-hard-drive-failure-prevention-101/
 7. http://www.c-jump.com/CIS60/lecture01_2.htm
 8. https://stackoverflow.com/questions/11253303/how-does-the-java-runtime-environment-compare-with-the-net-framework-in-terms-o
+9. https://metricpanda.com/tips-for-productive-debugging-with-gdb
