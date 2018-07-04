@@ -119,11 +119,7 @@ La mecanica de programar en Ensablador surgio mucho antes de C y era algo riguro
 ## Alto nivel y compiladores
 
 <p align="justify">
-Los Lenguajes de alto nivel estan para facilitarle el desarrollo al programador (pero tampoco esperar que todo el lenguaje haga todo por uno). Brindando abstracciones al programador que son mas faciles de usar y que sean un poco mas entendibles para el humano (Los lenguajes de alto nivel normalmente describen de forma abstrata las acciones que hara el procesador). El lenguaje C es considerado de alto nivel y/o medio nivel (ya que abstrae la mecanica de programar en lenguaje ensamblador a una sintaxis un poco mas humana). Aqui entra juego los compiladores, los compiladores son programas que se encargan de tomar el archivo escrito en lenguaje C traducirlo a lenguaje maquina (1010 1010 1010 1110). Mas o menos el proceso es de esta manera.
-</p>
-
-<p align="center">
-<img src="imagenes/compiler.png">
+Los Lenguajes de alto nivel estan para facilitarle el desarrollo al programador (pero tampoco esperar que todo el lenguaje haga todo por uno). Brindando abstracciones al programador que son mas faciles de usar y que sean un poco mas entendibles para el humano (Los lenguajes de alto nivel normalmente describen de forma abstrata las acciones que hara el procesador). El lenguaje C es considerado de alto nivel y/o medio nivel (ya que abstrae la mecanica de programar en lenguaje ensamblador a una sintaxis un poco mas humana). Aqui entra juego los compiladores, los compiladores son programas que se encargan de tomar el archivo escrito en lenguaje C traducirlo a lenguaje maquina (1010 1010 1010 1110).
 </p>
 
 <p align="justify">
@@ -197,8 +193,31 @@ Proximamente estaremos viendo la version C17.
 </p>
 
 ## Mecanica de desarrollo
+
+
+<p align="center">
+<img src="imagenes/compiler.png">
+</p>
+
+
 ## Introduccion a C con un ejemplo sencillo
+
+
 ## Keywords
+
+```
+auto      extern      short     while
+break     float       signed    _Alignas
+case      for         sizeof    _Alignof
+char      goto        static    _Bool
+const     if          struct    _Complex
+continue  inline      switch    _Generic
+default   int         typedef   _Imaginary
+do        long        union     _Noreturn
+double    register    unsigned  _static_asert
+else      restrict    void      #_Thread_local
+enum      return      volatile
+```
 
 # Referencias
 1. https://www.ecured.cu/Historia_del_Lenguaje_C
