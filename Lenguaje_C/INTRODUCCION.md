@@ -135,6 +135,7 @@ Cada familia de procesadores maneja un set de instrucciones diferente entonces s
 <p align="center">
 <img src="imagenes/vm.png">
 </p>
+
 ## Pasos para escribir un programa en C
 
 1. Definir los objetivos del programa
