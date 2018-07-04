@@ -110,17 +110,6 @@ Para crear carpetas usamos el comando mkdir.
 mkdir carpeta
 mkdir ../carpeta
 ```
-## mkdir
-
-<p align="justify">
-Para crear carpetas usamos el comando mkdir.
-</p>
-
-```bash
-#uso basico
-mkdir carpeta
-mkdir ../carpeta
-```
 ## mv
 
 <p align="justify">
@@ -129,10 +118,10 @@ El comando mv nos permite mover varios archivos a un directorio en concreto. Tam
 
 ```bash
 #uso basico
-mov file1 file2 file3 /home/usuario/carpeta/
+mv file1 file2 file3 /home/usuario/carpeta/
 
 # renombrar archivo
-mov file1 NewCoolFile
+mv file1 NewCoolFile
 ```
 
 ## less | more
