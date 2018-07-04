@@ -42,6 +42,6 @@ Lectores si encuentran un error tanto en la descripcion tecnico de cada tema o e
 1. [Configurando ambiente de desarrollo](/Lenguaje_C/CONFIG.md)
     * [Instalar compilador](/Lenguaje_C/CONFIG.md#instalacion-de-compilador-y-herramientas-necesariaslinux)
     * [Codeblocks](/Lenguaje_C/CONFIG.md#codeblocks)
-2. Introduccion
-3. Tipos de datos numericos
+2. [Introduccion](/Lenguaje_C/INTRODUCCION.md)
+3. [Tipos de datos numericos](/Lenguaje_C/TIPOSDATOS.md)
 4. Strings y Entrada/Salida con formato

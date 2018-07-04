@@ -36,7 +36,7 @@ https://www.ioccc.org/
 </p>
 
 <p align="center">
-<img src="imagenes/aplicaciones.png">
+<img src="imagenes/aplicaciones.png" height="250">
 </p>
 
 ## Entendimiento de la computadora
@@ -46,9 +46,63 @@ Para poder programar en C, se debe tener un entendimiento de las funciones de la
 </p>
 
 1. CPU (Cental Unit Process)
+
+<p align="center">
+<b>Creacion de un procesador - Intel</b><br>
+[![Creacion de un procesador - Intel](https://img.youtube.com/vi/d9SWNLZvA8g/0.jpg)](https://www.youtube.com/watch?v=d9SWNLZvA8g)
+</p>
+
+<p align="center">
+<b>Decapping de varios procesadores</b><br>
+<img src="imagenes/pro_inside.jpg" height="250">
+</p>
+
+<p align="center">
+<b>Simulador de procesador - www.visual6502.org/JSSim</b><br>
+<img src="imagenes/simulador.jpg" height="250">
+</p>
+
+<p align="center">
+<b>Vista basica en diagramas de bloques</b><br>
+<img src="imagenes/bloques.gif" >
+</p>
+
+<p align="center">
+<b>Vision general</b><br>
+<img src="imagenes/mezcla.png" height="500">
+</p>
+
 2. RAM (Random Access Memory)
-3. Almacenamiento
-4. Perifericos
+
+<p align="center">
+<b>Vision fisica de memoria RAM</b><br>
+<img src="imagenes/ram.jpg" height="350">
+</p>
+
+<p align="center">
+<b>Vision interna de memoria RAM</b><br>
+<img src="imagenes/ram2.jpg" height="250">
+</p>
+
+3. Almacenamiento (Usb, HardDrive, Etc)
+<p align="center">
+<b>Disco Duro</b><br>
+<img src="imagenes/hardrive.png" height="500">
+</p>
+
+4. Perifericos (Medios de entrada y salida de datos)
+
+<p align="center">
+<b>Partes de una MotherBoard</b><br>
+<img src="imagenes/board.jpg" height="500">
+</p>
+
+## Alto nivel y compiladores
 
 # Referencias
 1. https://www.ecured.cu/Historia_del_Lenguaje_C
+2. http://www.righto.com/2016/01/counting-bits-in-hardware-reverse.html
+3. http://www.instructables.com/id/How-to-expose-the-die-contents-of-an-old-CPU/
+4. https://www.quora.com/What-are-the-best-open-source-CPUs
+5. https://wikimedia.org
+6. https://blog.dell.com/en-us/laptop-hard-drive-failure-prevention-101/
