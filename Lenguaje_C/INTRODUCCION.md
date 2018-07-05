@@ -346,13 +346,25 @@ Pero debajo de este proceso se realiza otros procesos, los procesos son:
 
 > gcc -E main.c > main_preprocesado.c
 
+<p align="justify">
+En esta fase el compilador ejecutara todas las acciones de preprocesado (incluir librerias, definicion de macros, definicion de constantes y entre otros). En este ejemplo podremos ver que gcc genera un archivo donde mezclan el contenido de la libreria stdio.h con codigo fuente y otras configuraciones del compilador.
+</p>
+
 ### 2. Fase de traduccion de codigo fuente a codigo ensamblador.
 
 > gcc -S -o ensamblador.s main_preprocesado.c
 
+<p align="justify">
+En esta fase el compilador se encargara de la traduccion de codigo, (codigo fuente a codigo ensamblador).
+</p>
+
 ### 3. Fase de ensamblado.
 
 > as -o bin_sin_linkear.o ensamblador.s
+
+<p align="justify">
+En esta fase usaremos la herramienta as, que es un ensamblador en Gnu/Linux, la cual se encargara de convertir las instrucciones de ensamblador a codigo objeto entre otras cosas.
+</p>
 
 ### 4. Fase de linkear.
 
@@ -360,6 +372,10 @@ Pero debajo de este proceso se realiza otros procesos, los procesos son:
 
 <p align="center">
 <img src="imagenes/laboratorio.jpg">
+</p>
+
+<p align="justify">
+En esta fase se añade los codigos objetos necesarios para poder complementar las instrucciones de las librerias incluidas en el programa.
 </p>
 
 # Referencias
