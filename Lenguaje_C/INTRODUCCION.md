@@ -13,16 +13,16 @@ Antes de iniciar nuestra aventura en el mundo de la programacion con el lenguaje
 ## Breve historia y caracteristicas
 
 <p align="justify">
-C es un lenguaje de programación creado en 1972 por Dennis M. Ritchie en los Laboratorios Bell. Es un lenguaje orientado a la implementación de Sistemas Operativos, concretamente Unix. C es apreciado por la eficiencia del código que produce y es el lenguaje de programación más popular para crear software de sistemas, aunque también se utiliza para crear aplicaciones.  Se trata de un lenguaje débilmente tipificado de medio nivel pero con muchas características de bajo nivel. Dispone de las estructuras típicas de los lenguajes de alto nivel pero, a su vez, dispone de construcciones del lenguaje que permiten un control a muy bajo nivel. Los compiladores suelen ofrecer extensiones al lenguaje que posibilitan mezclar código en ensamblador con código C o acceder directamente a memoria o dispositivos periféricos. se pueden desarrollar compiladores de C fácilmente. En consecuencia, el lenguaje C está disponible en un amplio abanico de plataformas (seguramente más que cualquier otro lenguaje). Además, a pesar de su naturaleza de bajo nivel, el lenguaje se desarrolló para incentivar la programación independiente de la máquina. Un programa escrito cumpliendo los estándares e intentando que sea portátil puede compilarse en muchos computadores.
+C es un lenguaje de programación creado en 1972 por Dennis M. Ritchie en los Laboratorios Bell. Es un lenguaje orientado a la implementación de Sistemas Operativos, concretamente Unix. C es apreciado por la eficiencia del código que produce y es el lenguaje de programación más popular para crear software de sistemas, aunque también se utiliza para crear aplicaciones.  Se trata de un lenguaje débilmente tipificado de medio nivel pero con muchas características de bajo nivel. Dispone de las estructuras típicas de los lenguajes de alto nivel pero, a su vez, dispone de construcciones del lenguaje que permiten un control a muy bajo nivel. Los compiladores suelen ofrecer extensiones al lenguaje que posibilitan mezclar código en ensamblador con código C o acceder directamente a memoria o dispositivos periféricos. se pueden desarrollar compiladores de C fácilmente. En consecuencia, el lenguaje C está disponible en un amplio abanico de plataformas (seguramente más que cualquier otro lenguaje). A pesar de su naturaleza de bajo nivel, el lenguaje se desarrolló para incentivar la programación independiente de la máquina. Un programa escrito cumpliendo los estándares e intentando que sea portátil puede compilarse en muchos computadores.
 C se desarrolló originalmente (conjuntamente con el sistema operativo Unix, con el que ha estado asociado mucho tiempo) por programadores para programadores. Sin embargo, ha alcanzado una popularidad enorme, y se ha usado en contextos muy alejados de la programación de sistemas, para la que se diseñó originalmente
 </p>
 
 <p align="justify">
-Tambien cabe decir que el lenguaje C incorpora las caracteristicas necesarias para la teoria y la practica de las ciencias de la computacion (planeamiento <i>top-down, programacion estructurada, diseño modular</i>). C tiene la versatibilidad de permitir escribir codigo para procesadores de 8 bits o para procesadores de supercomputadoras pero hay que tener en cuenta que si se realiza un codigo para un sistema operativo especifico (sea linux o windows o etc) sera un poco complicado que existe compatibilidad entre en las dos plataformas (por que los binarios generados para cada sistema son diferentes, y las funciones que se usan del api cambian).
+Tambien cabe decir que el lenguaje C incorpora las caracteristicas necesarias para la teoria y la practica de las ciencias de la computacion (planeamiento <i>top-down, programacion estructurada, diseño modular</i>). C tiene la versatibilidad de permitir escribir codigo para procesadores de 8 bits o para procesadores de supercomputadoras pero hay que tener en cuenta que si se realiza un codigo para un sistema operativo especifico (sea linux o windows o etc) sera un poco complicado que exista compatibilidad entre en las dos plataformas (por que los binarios generados para cada sistema son diferentes, y las funciones que se usan del API cambian).
 </p>
 
 <p align="justify">
-El lenguaje C brind una gran libertad (no tanto como Ensamblador) al desarrollador en poder hacer ciertas cosas que en otros lenguajes no se podria hacer y esta libertad con lleva una gran resposabilidad, dado que nos permite tener acceso al hardware y al sistema operativo. Los errores que aveces se pueden encontrar programando son algunas veces dificil de encontrar (por ejemplo usando punteros) y con esto vamos a <b>"El precio de la libertad es una eterna vigilancia"</b>.
+El lenguaje C brinda una gran libertad (no tanto como Ensamblador) al desarrollador de poder hacer ciertas cosas que en otros lenguajes no se podria hacer y esta libertad conlleva una gran resposabilidad, dado que nos permite tener acceso al hardware y al sistema operativo. Los errores que aveces se pueden encontrar programando son algunas veces dificil de encontrar (por ejemplo usando punteros) y con esto vamos a <b>"El precio de la libertad es una eterna vigilancia"</b>.
 </p>
 
 <p align="justify">
@@ -44,7 +44,7 @@ https://www.ioccc.org/
 ## Entendimiento de la computadora
 
 <p align="justify">
-Para poder programar en C, se debe tener un entendimiento de las funciones de la computadoras un poco. empezando por los componentes que tiene:
+Para poder programar en C, se debe tener un entendimiento de las funciones de la computadoras. empezando por los componentes que tiene:
 </p>
 
 1. CPU (Cental Unit Process)
@@ -304,21 +304,63 @@ Este listado de palabras, son las palabras reservadas por el compilador no podre
 </p>
 
 ```
-auto      extern      short     while
-break     float       signed    _Alignas
-case      for         sizeof    _Alignof
-char      goto        static    _Bool
-const     if          struct    _Complex
-continue  inline      switch    _Generic
-default   int         typedef   _Imaginary
-do        long        union     _Noreturn
-double    register    unsigned  _static_asert
-else      restrict    void      #_Thread_local
-enum      return      volatile
+auto        extern        short       while
+break       float         signed      _Alignas
+case        for           sizeof      _Alignof
+char        goto          static      _Bool
+const       if            struct      _Complex
+continue    inline        switch      _Generic
+default     int           typedef     _Imaginary
+do          long          union       _Noreturn
+double      register      unsigned    _static_asert
+else        restrict      void        #_Thread_local
+enum        return        volatile
 ```
 ## Laboratorio
 
+<p align="justify">
 Realizar proceso de compilacion y linkeo por consola con un hola mundo sencillo.
+</p>
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+  printf("Hola Mundo\n");
+  return 0;
+}
+```
+
+<p align="justify">
+El objetivo de este laboratorio es poder comprender el procesos que hace al compilar un programa en C. Normalmente para compilar un programa se realiza por medio del comando:
+</p>
+
+> gcc -o programa main.c
+
+<p align="justify">
+Pero debajo de este proceso se realiza otros procesos, los procesos son:
+</p>
+
+### 1. Fase de preprocesado.
+
+> gcc -E main.c > main_preprocesado.c
+
+### 2. Fase de traduccion de codigo fuente a codigo ensamblador.
+
+> gcc -S -o ensamblador.s main_preprocesado.c
+
+### 3. Fase de ensamblado.
+
+> as -o bin_sin_linkear.o ensamblador.s
+
+### 4. Fase de linkear.
+
+> ld --dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/lib/x86_64-linux-gnu/crtn.o bin_sin_linkear.o -lc -o programa
+
+<p align="center">
+<img src="imagenes/laboratorio.jpg">
+</p>
 
 # Referencias
 1. https://www.ecured.cu/Historia_del_Lenguaje_C
