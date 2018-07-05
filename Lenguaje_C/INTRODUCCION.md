@@ -388,3 +388,5 @@ En esta fase se añade los codigos objetos necesarios para poder complementar la
 7. http://www.c-jump.com/CIS60/lecture01_2.htm
 8. https://stackoverflow.com/questions/11253303/how-does-the-java-runtime-environment-compare-with-the-net-framework-in-terms-o
 9. https://metricpanda.com/tips-for-productive-debugging-with-gdb
+
+10. http://blog.techveda.org/building-executables-with-gnu-linker/
