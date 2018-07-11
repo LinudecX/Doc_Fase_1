@@ -44,7 +44,7 @@ En la version de c99 incluyeros soporte para tipo de datos de numeros imaginario
 ```c
 _Bool _Complex _Imaginary
 ```
-Todas estos tipos de datos han sido agregados por las necesidades de los usuarios. la evolucion de los tipos de datos podemos consultar esto https://en.cppreference.com/w/c/types.
+Todos estos tipos de datos han sido agregados por las necesidades de los usuarios. la evolucion de los tipos de datos podemos consultar esto https://en.cppreference.com/w/c/types.
 
 ## Enteros
 
@@ -57,7 +57,7 @@ Si visualizamos los numeros desde el aspecto matematica, podemos ver los conjunt
 </p>
 
 <p align="justify">
-Si vemos en el conjunto numerico de los enteros podemos encontrar dos tipos de subconjuntos, los enteros positivos y los enteros negativos. En C no hay mucha diferencia de esto, podemos definir enteros con o sin signo. Los enteros normalmente tienen 32 bits (en procesadores de 32 y 64 bits). Entonces nuestra tarea (o mas bien la tarea del compilador) es poder representar representar numeros tanto enteros positivos como enteros negativos dentro de este espacio de memoria de 32 bits. La siguente imagen nos ayudara a hacernos una visualizacion mental de como se puede hacer esto. (notamental: 2 bytes equivalen a un word, osea que los tipo int pueden tener 2 word. pero esto cambia dependiedo de la arquitectura).
+Si vemos en el conjunto numerico de los enteros podemos encontrar dos tipos de subconjuntos, los enteros positivos y los enteros negativos. En C no hay mucha diferencia de esto, podemos definir enteros con o sin signo. Los enteros normalmente tienen 32 bits (en procesadores de 32 y 64 bits). Entonces nuestra tarea (o mas bien la tarea del compilador) es poder representar numeros tanto enteros positivos como enteros negativos dentro de este espacio de memoria de 32 bits. La siguente imagen nos ayudara a hacernos una visualizacion mental de como se puede hacer esto. (notamental: 2 bytes equivalen a un word, osea que los tipo int pueden tener 2 word. pero esto cambia dependiedo de la arquitectura).
 </p>
 
 <p align="center">
@@ -92,3 +92,52 @@ En el anterior ejemplo es muy intuitivo ver como es la representacion de los num
 <p align="justify">
 Para la representacion de numeros negativos usamos el complemento a 2 (tomar el numero positivo, invertir los bits, y luego sumarle 1 a ese conjunto de bits), y con esto podemos representar nuestros numeros negativos en memoria.
 </p>
+
+Los dos ejemplos de antes los podremos ver un poco mas tangible con un codigo fuente.
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    // se declara y se inicializa las variables
+    signed int variable1 = -1693;
+    unsigned int variable2 = 1693;
+
+    // la funcion printf() se usa para mostrar informacion por la consola
+    printf("variable1 = %i \t hexadecimal(variable1) = %#010x \n", variable1, variable1);
+    printf("variable2 =  %i \t hexadecimal(variable2) = %#010x \n", variable2, variable2);
+
+    return 0;
+}
+```
+
+<p align="center">
+<img src="imagenes/tipos_datos_numericos/output1.png">
+</p>
+
+### Subtipo de datos enteros
+
+### Formas de inicializacion en variables de tipo enteras
+
+### Definicion de constantes
+
+### Especificaciones del tipo char
+
+### portabilidad de variables int <stdint.h> <inttypes.h>
+
+## Booleanos
+
+## Numeros reales
+
+## Numeros imaginarios
+
+## Numeros complejos
+
+## sizeof()
+
+## Recomendacion : uso de nomeclaturas
+
+## breve introduccion a I/O
+
+## Ejercicios
