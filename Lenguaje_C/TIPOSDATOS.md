@@ -57,7 +57,7 @@ Si visualizamos los numeros desde el aspecto matematica, podremos ver los conjun
 </p>
 
 <p align="justify">
-Si vemos en el conjunto numerico de los enteros podremos encontrar dos tipos de subconjuntos, los enteros positivos y los enteros negativos. En C no hay mucha diferencia de esto, podremos definir enteros con o sin signo. Los enteros normalmente tienen 32 bits (en procesadores de 32 y 64 bits). Entonces nuestra tarea (o mas bien la tarea del compilador) es poder representar representar numeros tanto enteros positivos como enteros negativos dentro de este espacio de memoria de 32 bits. La siguente imagen nos ayudara a hacernos una visualizacion mental de como se puede hacer esto.
+Si vemos en el conjunto numerico de los enteros podremos encontrar dos tipos de subconjuntos, los enteros positivos y los enteros negativos. En C no hay mucha diferencia de esto, podremos definir enteros con o sin signo. Los enteros normalmente tienen 32 bits (en procesadores de 32 y 64 bits). Entonces nuestra tarea (o mas bien la tarea del compilador) es poder representar representar numeros tanto enteros positivos como enteros negativos dentro de este espacio de memoria de 32 bits. La siguente imagen nos ayudara a hacernos una visualizacion mental de como se puede hacer esto. (notamental: 2 bytes equivalen a un word, osea que los tipo int pueden tener 2 word. pero esto cambia dependiedo de la arquitectura).
 </p>
 
 <p align="center">
@@ -73,5 +73,22 @@ int variable1;            \* Declaracion de variable de tipo entero con signo *\
 
 unsigned int variable2;   \* Declaracion de variable de tipo entero sin signo *\
 
-
 ```
+
+Veamos dos ejemplos pequeños sobre la representacion del tipo int(uno con signo y otro sin signo).
+
+<p align="center">
+<img src="imagenes/tipos_datos_numericos/ejemplo_int1.png">
+</p>
+
+<p align="justify">
+En el anterior ejemplo es muy intuitivo ver como es la representacion de los numeros enteros dentro de memoria y podemos verficar que en el bit del signo es 0 ya que el numero que estamos representado es un numero positivo. Ahora otro ejemplo para la representacion negativa.
+</p>
+
+<p align="center">
+<img src="imagenes/tipos_datos_numericos/ejemplo_int2.png">
+</p>
+
+<p align="justify">
+Para la representacion de numeros negativos usamos el complemento a 2 (tomar el numero positivo, invertir los bits, y luego sumarle 1 a ese conjunto de bits), y con esto podremos representar nuestros numeros negativos en memoria.
+</p>
