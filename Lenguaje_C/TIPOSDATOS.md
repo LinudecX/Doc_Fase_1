@@ -57,5 +57,21 @@ Si visualizamos los numeros desde el aspecto matematica, podremos ver los conjun
 </p>
 
 <p align="justify">
-Si vemos en el conjunto numerico de los enteros podremos encontrar dos tipos de subconjuntos, los enteros positivos y los enteros negativos. En C no hay mucha diferencia de esto, podremos definir enteros con o sin signo. Los enteros normalmente tienen 32 bits (en procesadores de 32 y 64 bits)
+Si vemos en el conjunto numerico de los enteros podremos encontrar dos tipos de subconjuntos, los enteros positivos y los enteros negativos. En C no hay mucha diferencia de esto, podremos definir enteros con o sin signo. Los enteros normalmente tienen 32 bits (en procesadores de 32 y 64 bits). Entonces nuestra tarea (o mas bien la tarea del compilador) es poder representar representar numeros tanto enteros positivos como enteros negativos dentro de este espacio de memoria de 32 bits. La siguente imagen nos ayudara a hacernos una visualizacion mental de como se puede hacer esto.
 </p>
+
+<p align="center">
+<img src="imagenes/tipos_datos_numericos/int_32.png">
+</p>
+
+Como se puede ver en la imagen el bit mas significativo(el que tiene mayor valor representativo para la expresion) es usado para la representacion del signo (1 si es negativo, 0 si es positivo) el compilador entendera que este es un numero signado y no tomara en cuenta ese ultimo bit(solo lo tendra en cuenta para el criterio del signo), con esto podremos calcular el rango de trabajo de este tipo de dato numerico (cuando se habla de rango de trabajo se refiere al maximo numero que puede almacenar y el minimo numero que puede almacenar en una variable de este tipo de dato) en el int de 32 bits con signo (aunque si lo analizamos bien solo tenemos 31 bits de representacion numerica) podremos almacenar de -2,147,483,648 a 2,147,483,647. Pero si queremos almacenar mas numeros no positivos podremos definirlo desde la misma sintaxis de C.
+
+
+```c
+signed int variable0;     \* Declaracion de variable de tipo entero con signo *\
+int variable1;            \* Declaracion de variable de tipo entero con signo *\
+
+unsigned int variable2;   \* Declaracion de variable de tipo entero sin signo *\
+
+
+```
